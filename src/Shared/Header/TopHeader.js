@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const TopHeader = () => {
   return (
     <div className='top-header w-full'>
-        <div className="flex h-full max-w-7xl px-16 justify-between mx-auto">
+        <div className="flex h-full max-w-7xl px-8 justify-between mx-auto">
             <div className="left flex space-x-5 items-center mx-auto md:mx-0">
                 <div className="flex items-center text-white h-full space-x-1">
                     <p><BsTelephoneFill></BsTelephoneFill> </p>
@@ -17,13 +17,14 @@ const TopHeader = () => {
                     <p className='text-sm'>contact@gmail.com</p>
                 </div>
             </div>
-            <div className="right flex space-x-5 items-center hidden md:block">
+            <div className="right flex space-x-5 items-center ">
                 <div className="flex items-center text-white h-full space-x-1">
                     
                     <Link to='/' className='text-sm link'>FAQS</Link>
                 </div>
                 <div className="flex items-center text-white h-full space-x-1">
-                <Link to='/' className='text-sm link'>Need Help?</Link>
+                    
+                    <Link to='/' className='text-sm link'>Need Help?</Link>
                 </div>
             </div>
         </div>
