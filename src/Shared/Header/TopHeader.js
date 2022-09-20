@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 
 const TopHeader = () => {
   return (
-    <div className='top-header'>
-        <div className="flex h-full max-w-7xl px-16 justify-between">
-            <div className="left flex space-x-5 items-center">
+    <div className='top-header w-full'>
+        <div className="flex h-full max-w-7xl px-16 justify-between mx-auto">
+            <div className="left flex space-x-5 items-center mx-auto md:mx-0">
                 <div className="flex items-center text-white h-full space-x-1">
                     <p><BsTelephoneFill></BsTelephoneFill> </p>
                     <p className='text-sm'>+287675546464</p>
@@ -17,7 +17,7 @@ const TopHeader = () => {
                     <p className='text-sm'>contact@gmail.com</p>
                 </div>
             </div>
-            <div className="right flex space-x-5 items-center">
+            <div className="right flex space-x-5 items-center hidden md:block">
                 <div className="flex items-center text-white h-full space-x-1">
                     
                     <Link to='/' className='text-sm link'>FAQS</Link>
