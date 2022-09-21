@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Footer from './Shared/Footer/Footer';
 import ShippingAndReturns from './Pages/ShippingAndReturns/ShippingAndReturns';
+import Blog from './Pages/Blog/Blog';
 
 
 
@@ -18,6 +19,7 @@ function App() {
        <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="shipping" element={<ShippingAndReturns/>} />
+        <Route path="blog" element={<Blog/>} />
        </Routes>
        <Footer></Footer>
     </div>

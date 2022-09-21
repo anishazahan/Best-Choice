@@ -18,7 +18,7 @@ const Navbar = () => {
                         <NavLink to='products' className='active font-medium'>Products</NavLink>
                         <NavLink to='/' className='active font-medium'>Privacy Policy</NavLink>
                         <NavLink to='shipping' className='active font-medium'>Shiping & returns</NavLink>
-                        <NavLink to='/' className='active font-medium'>Blog</NavLink>
+                        <NavLink to='blog' className='active font-medium'>Blog</NavLink>
                         <NavLink to='/' className='active font-medium'>Contact</NavLink>
                         <NavLink to='/' className='active font-medium'>other</NavLink>
                        
