@@ -45,6 +45,13 @@ const Footer = () => {
     </div>
   </div>
 </footer>
+<section>
+  <div className=" py-4  px-5 lg:px-16">
+  <hr className="border border-gray-500" />
+  </div>
+  <h2 className="text-center text-white mt-3">Copyrignt all right reserved  {(new Date().getFullYear())} </h2>
+  <h2 className="text-center text-white pb-10 pt-3">By <span className="uppercase font-extrabold text-[17px] text-secondary">Anisha Zahan</span> </h2>
+</section>
 
     </div>
   );
