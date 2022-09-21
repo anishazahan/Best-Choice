@@ -1,3 +1,12 @@
 img:hover{
     background: rgba(0, 0, 0, 0.392);
 }
+
+.offer-background{
+    background: url('../../assets/offerbanner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
