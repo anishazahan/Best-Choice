@@ -8,7 +8,7 @@ const OfferBanner = () => {
 
         <div className="offer-background my-16">
             <div className="max-w-7xl py-20">
-                <div className="text-white flex flex-col justify-center text-right lg:mr-[40%] space-y-3">
+                <div className=" text-white flex flex-col justify-center text-center lg:text-right lg:mr-[40%] space-y-3">
                     <h1 className='text-[18px] uppercase '>NEXT IS NOW : ULTRA SOUND</h1>
                     <h1 className='text-3xl font-extrabold '>Samsung S7 340</h1>
                     <div className="">
