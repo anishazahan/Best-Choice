@@ -8,11 +8,11 @@ const Footer = () => {
     <div className="footer-section">
     
     <footer className=" px-5 md:px-7 lg:px-10 py-16 text-white mx-auto flex flex-col md:flex-row max-w-7xl justify-between">
-  <div>
+  <div className="mx-auto lg:mx-0 text-center lg:text-left">
     <h1 className="mb-5 text-2xl font-bold footer-title">Best Choice</h1>
     <p className="font-medium">Best Choice Smart Service Company<br/> Providing reliable tech since   {(new Date().getFullYear())}</p>
   </div> 
- <div className="flex flex-col md:flex-row justify-between space-x-36">
+ <div className=" py-10 lg:py-0 flex flex-row justify-around lg:justify-between  lg:space-x-36">
  <div>
     <h1 className=" mb-5 footer-title">Services</h1> 
     <div className="flex flex-col space-y-2">
@@ -32,7 +32,7 @@ const Footer = () => {
   </div>
   </div> 
  </div>
-  <div>
+  <div className="mx-auto lg:mx-0">
     <h1 className="footer-title mb-5">Newsletter</h1> 
     <div className="form-control w-80">
       <label className="label">
