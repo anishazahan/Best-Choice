@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import useBlogs from '../../Hooks/useBlogs'
 
 
@@ -19,7 +20,8 @@ const HomeBolg = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 m-0 p-0">
             {
                 blogs && blogs.map(blog=>{
-                    return <div className=" my-5 p-5 lg:p-0 m-0">
+                    return <Link>
+                    <div className=" my-5 p-5 lg:p-0 m-0">
                         <div className="">
                             <img className='w-full' src={blog.img} alt="" />
                         </div>
@@ -29,7 +31,7 @@ const HomeBolg = () => {
                         <div className="mt-5">
                             <button className=' py-2 overflow-hidden hover:border hover:bg-transparent transition-all hover:border-1 bg-secondary text-white border-secondary rounded-sm hover:text-secondary font-medium px-10'>Details</button>
                         </div>
-                    </div>
+                    </div></Link>
                 }).slice(0,2)
             }
            
