@@ -1,6 +1,6 @@
 import React from 'react'
 import useBlogs from '../../Hooks/useBlogs'
-import {AiFillFacebook} from 'react-icons/ai'
+import {AiFillFacebook,AiFillLinkedin,AiFillInstagram,AiFillTwitterSquare} from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 
 const Blog = () => {
@@ -24,9 +24,9 @@ const Blog = () => {
                         </div>
                         <div className="icons flex space-x-5 mt-10">
                             <Link className='text-2xl rounded-full hover:bg-primary text-white p-2  shadow-md bg-secondary' to='/'> <AiFillFacebook></AiFillFacebook> </Link>
-                            <Link className='text-2xl rounded-full hover:bg-primary text-white p-2  shadow-md bg-secondary' to='/'> <AiFillFacebook></AiFillFacebook> </Link>
-                            <Link className='text-2xl rounded-full hover:bg-primary text-white p-2  shadow-md bg-secondary' to='/'> <AiFillFacebook></AiFillFacebook> </Link>
-                            <Link className='text-2xl rounded-full hover:bg-primary text-white p-2  shadow-md bg-secondary' to='/'> <AiFillFacebook></AiFillFacebook> </Link>
+                            <Link className='text-2xl rounded-full hover:bg-primary text-white p-2  shadow-md bg-secondary' to='/'> <AiFillLinkedin></AiFillLinkedin> </Link>
+                            <Link className='text-2xl rounded-full hover:bg-primary text-white p-2  shadow-md bg-secondary' to='/'> <AiFillInstagram></AiFillInstagram> </Link>
+                            <Link className='text-2xl rounded-full hover:bg-primary text-white p-2  shadow-md bg-secondary' to='/'> <AiFillTwitterSquare></AiFillTwitterSquare> </Link>
                         </div>
                        </div>
                        
