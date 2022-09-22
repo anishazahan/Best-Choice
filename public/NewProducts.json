@@ -182,11 +182,11 @@
     {
         "id":"10",
         "img":"https://cdn11.bigcommerce.com/s-bea11/images/stencil/320w/products/19/383/20__54461.1529064715.jpg?c=2",
-        "name":"Speck 13-inch loren ipsumnb",
-        "brand":"Speck",
-        "Weight":"2.00 LBS",
+        "name":"Higher Ground Shuttle sheets",
+        "brand":"HIGHER GROUND",
+        "Weight":"3.00 LBS",
         "sku":"APPLE-INEAR",
-        "price":"124.00",
+        "price":"39.00",
         "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
         "descriptionTittle1":"Rediscover your music.",
         "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
@@ -199,4 +199,64 @@
         ]
         
     },
+    {
+        "id":"11",
+        "img":"https://cdn11.bigcommerce.com/s-bea11/images/stencil/320w/products/18/385/21__96175.1529064722.jpg?c=2",
+        "name":"Crumpler Considerable Bag loren",
+        "brand":"CRUMPLER",
+        "Weight":"2.00 LBS",
+        "sku":"APPLE-INEAR",
+        "price":"89.00",
+        "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
+        "descriptionTittle1":"Rediscover your music.",
+        "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
+        "descriptionTittle2":"Technical Specifications",
+        "fetaure":[
+            "Frequency response: 5Hz to 21kHz",
+            "Impedance (at 100Hz): 23 ohms",
+            "Sensitivity (at 100Hz): 109 dB SPL/mW",
+            "Drivers: Custom two-way balanced armature (woofer and tweeter in each earpiece)"
+        ]
+        
+    },
+    {
+        "id":"12",
+        "img":"https://cdn11.bigcommerce.com/s-bea11/images/stencil/320w/products/17/415/10__60814.1529065128.jpg?c=2",
+        "name":"Apple Wireless Keyboard sheets",
+        "brand":"CRUMPLER",
+        "Weight":"2.00 LBS",
+        "sku":"APPLE-INEAR",
+        "price":"70.00",
+        "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
+        "descriptionTittle1":"Rediscover your music.",
+        "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
+        "descriptionTittle2":"Technical Specifications",
+        "fetaure":[
+            "Frequency response: 5Hz to 21kHz",
+            "Impedance (at 100Hz): 23 ohms",
+            "Sensitivity (at 100Hz): 109 dB SPL/mW",
+            "Drivers: Custom two-way balanced armature (woofer and tweeter in each earpiece)"
+        ]
+        
+    },
+    {
+        "id":"13",
+        "img":"https://cdn11.bigcommerce.com/s-bea11/images/stencil/320w/products/14/391/11__78360.1529065045.jpg?c=2",
+        "name":"Apple Mighty Mouse Loren",
+        "brand":"Apple",
+        "Weight":"2.00 LBS",
+        "sku":"APPLE-INEAR",
+        "price":"69.00",
+        "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
+        "descriptionTittle1":"Rediscover your music.",
+        "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
+        "descriptionTittle2":"Technical Specifications",
+        "fetaure":[
+            "Frequency response: 5Hz to 21kHz",
+            "Impedance (at 100Hz): 23 ohms",
+            "Sensitivity (at 100Hz): 109 dB SPL/mW",
+            "Drivers: Custom two-way balanced armature (woofer and tweeter in each earpiece)"
+        ]
+        
+    }
 ]

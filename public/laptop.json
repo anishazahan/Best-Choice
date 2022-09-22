@@ -1,0 +1,155 @@
+[
+    {
+        "id":1,
+        "img": "https://i.pcmag.com/imagery/reviews/05l2EoHgxLKDb5dq2UGTpdR-17.fit_lim.size_238x139.v1604675195.jpg",
+        "name":"Dell XPS 13 (9310)",
+        "brand":"Microsoft",
+        "sku":"APPLE-INEAR",
+        "price":"1000.00",
+        "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
+        "descriptionTittle1":"Rediscover your music.",
+        "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
+        "descriptionTittle2":"Technical Specifications",
+        "fetaure":[
+            "Frequency response: 5Hz to 21kHz",
+            "Impedance (at 100Hz): 23 ohms",
+            "Sensitivity (at 100Hz): 109 dB SPL/mW",
+            "Drivers: Custom two-way balanced armature (woofer and tweeter in each earpiece)"
+        ]
+        
+    },
+    {
+        "id":2,
+        "img": "https://i.pcmag.com/imagery/reviews/0674w0QBjvMdOZlsdEsI6Dk-1.fit_lim.size_238x139.v1637181698.jpg",
+        "name":"Lenovo IdeaPad 3 14",
+        "brand":"Microsoft",
+        "sku":"APPLE-INEAR",
+        "price":"1400.00",
+        "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
+        "descriptionTittle1":"Rediscover your music.",
+        "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
+        "descriptionTittle2":"Technical Specifications",
+        "fetaure":[
+            "Frequency response: 5Hz to 21kHz",
+            "Impedance (at 100Hz): 23 ohms",
+            "Sensitivity (at 100Hz): 109 dB SPL/mW",
+            "Drivers: Custom two-way balanced armature (woofer and tweeter in each earpiece)"
+        ]
+        
+    },
+    {
+        "id":3,
+        "img": "https://i.pcmag.com/imagery/reviews/02ddU4YREqSWvliJ8tWFNww-1.fit_lim.size_238x139.v1644978400.jpg",
+        "name":"Acer Chromebook Spin 713 (2022)",
+        "brand":"Apple",
+      
+        "sku":"APPLE-INEAR",
+        "price":"1600.00",
+        "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
+        "descriptionTittle1":"Rediscover your music.",
+        "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
+        "descriptionTittle2":"Technical Specifications",
+        "fetaure":[
+            "Frequency response: 5Hz to 21kHz",
+            "Impedance (at 100Hz): 23 ohms",
+            "Sensitivity (at 100Hz): 109 dB SPL/mW",
+            "Drivers: Custom two-way balanced armature (woofer and tweeter in each earpiece)"
+        ]
+        
+    },
+    {
+        "id":4,
+        "img": "https://i.pcmag.com/imagery/reviews/04nwrNt8d5J58uOPDhHfRiP-1.fit_lim.size_238x139.v1657903935.jpg",
+        "name":"Lenovo ThinkPad X1 Carbon Gen 10 (2022))",
+        "brand":"Apple",
+        "sku":"APPLE-INEAR",
+        "price":"1200.00",
+        "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
+        "descriptionTittle1":"Rediscover your music.",
+        "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
+        "descriptionTittle2":"Technical Specifications",
+        "fetaure":[
+            "Frequency response: 5Hz to 21kHz",
+            "Impedance (at 100Hz): 23 ohms",
+            "Sensitivity (at 100Hz): 109 dB SPL/mW",
+            "Drivers: Custom two-way balanced armature (woofer and tweeter in each earpiece)"
+        ]
+        
+    },
+    {
+        "id":5,
+        "img": "https://i.pcmag.com/imagery/reviews/02ddU4YREqSWvliJ8tWFNww-1.fit_lim.size_238x139.v1644978400.jpg",
+        "name":"Acer Chromebook Spin 713 (2022)",
+        "brand":"Apple",
+        "sku":"Acer Chromebook Spin 713 (2022",
+        "price":"1500.00",
+        "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
+        "descriptionTittle1":"Rediscover your music.",
+        "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
+        "descriptionTittle2":"Technical Specifications",
+        "fetaure":[
+            "Frequency response: 5Hz to 21kHz",
+            "Impedance (at 100Hz): 23 ohms",
+            "Sensitivity (at 100Hz): 109 dB SPL/mW",
+            "Drivers: Custom two-way balanced armature (woofer and tweeter in each earpiece)"
+        ]
+        
+    },
+    {
+        "id":6,
+        "img": "https://i.pcmag.com/imagery/reviews/02ddU4YREqSWvliJ8tWFNww-1.fit_lim.size_238x139.v1644978400.jpg",
+        "name":"Lenovo ThinkPad X1 Carbon Gen 10 (2022)",
+        "brand":"Apple",
+        "sku":"Acer Chromebook Spin 713 (2022",
+        "price":"1300.00",
+        "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
+        "descriptionTittle1":"Rediscover your music.",
+        "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
+        "descriptionTittle2":"Technical Specifications",
+        "fetaure":[
+            "Frequency response: 5Hz to 21kHz",
+            "Impedance (at 100Hz): 23 ohms",
+            "Sensitivity (at 100Hz): 109 dB SPL/mW",
+            "Drivers: Custom two-way balanced armature (woofer and tweeter in each earpiece)"
+        ]
+        
+    },
+    {
+        "id":7,
+        "img": "https://i.pcmag.com/imagery/reviews/04xYvayiOeQO4WuedthUQM7-1.fit_lim.size_238x139.v1629910058.jpg",
+        "name":"Lenovo ThinkPad X1 Carbon Gen 10 (2022)",
+        "brand":"Apple",
+        "sku":"Dell Inspiron 16 Plus (7610)",
+        "price":"990.00",
+        "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
+        "descriptionTittle1":"Rediscover your music.",
+        "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
+        "descriptionTittle2":"Technical Specifications",
+        "fetaure":[
+            "Frequency response: 5Hz to 21kHz",
+            "Impedance (at 100Hz): 23 ohms",
+            "Sensitivity (at 100Hz): 109 dB SPL/mW",
+            "Drivers: Custom two-way balanced armature (woofer and tweeter in each earpiece)"
+        ]
+        
+    },
+    {
+        "id":8,
+        "img": "https://i.pcmag.com/imagery/reviews/03qDnrEv0uq3CMelRB2yak8-1.fit_lim.size_238x139.v1649691858.jpg",
+        "name":"Lenovo Yoga 9i Gen 7",
+        "brand":"Apple",
+        "sku":"Dell Inspiron 16 Plus (7610)",
+        "price":"990.00",
+        "description1":"Hear every detail of your music every time you tune in with the Apple In-Ear Headphones with Remote and Mic. They offer pro audio performance and impressive sound isolation, and convenient buttons let you adjust the volume and control music and video playback.",
+        "descriptionTittle1":"Rediscover your music.",
+        "description2":"Put on the Apple In-Ear Headphones, select your favorite track, and hear musical details you never knew existed. It's almost like you're experiencing your music for the first time.",
+        "descriptionTittle2":"Technical Specifications",
+        "fetaure":[
+            "Frequency response: 5Hz to 21kHz",
+            "Impedance (at 100Hz): 23 ohms",
+            "Sensitivity (at 100Hz): 109 dB SPL/mW",
+            "Drivers: Custom two-way balanced armature (woofer and tweeter in each earpiece)"
+        ]
+        
+    }
+]
