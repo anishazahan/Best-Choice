@@ -1,0 +1,32 @@
+[
+    {
+        "id":"1",
+        "img":"https://cdn11.bigcommerce.com/s-bea11/product_images/uploaded_images/category-2.jpg",
+        "name":"Watch"
+    },
+    {
+        "id":"2",
+        "img":"https://cdn11.bigcommerce.com/s-bea11/product_images/uploaded_images/category-3.jpg",
+        "name":"Gaming toys"
+    },
+    {
+        "id":"3",
+        "img":"https://cdn11.bigcommerce.com/s-bea11/product_images/uploaded_images/category-3.jpg",
+        "name":"Phone"
+    },
+    {
+        "id":"4",
+        "img":"https://cdn11.bigcommerce.com/s-bea11/product_images/uploaded_images/category-5.jpg",
+        "name":"Electronics"
+    },
+    {
+        "id":"6",
+        "img":"https://cdn11.bigcommerce.com/s-bea11/product_images/uploaded_images/category-4.jpg",
+        "name":"Electronics"
+    },
+    {
+        "id":"7",
+        "img":"https://cdn11.bigcommerce.com/s-bea11/product_images/uploaded_images/category-4.jpg",
+        "name":"laptop"
+    }
+]

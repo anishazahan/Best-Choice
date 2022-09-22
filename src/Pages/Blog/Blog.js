@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import useBlogs from '../../Hooks/useBlogs'
 import {AiFillFacebook,AiFillLinkedin,AiFillInstagram,AiFillTwitterSquare} from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 
 const Blog = () => {
+    const [allBlogs,setAllBlogs]=useState(false);
     const [blogs]=useBlogs();
   return (
     <div className='max-w-6xl mx-auto'>
@@ -31,9 +32,12 @@ const Blog = () => {
                        </div>
                        
                 </div>
-            })
+            }).slice(0,4)
         }
        </div>
+       <div className="mr-auto my-5 ">
+        <button className='link' onClick={()=>{setAllBlogs(!allBlogs)}}>{allBlogs? 'see less':'See More'}</button>
+    </div>
     </div>
   )
 }
