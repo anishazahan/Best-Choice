@@ -8,6 +8,8 @@ const Services = () => {
   return (
     <>
         <div className="max-w-7xl mx-auto">
+            <h2 className='text-center text-2xl font-semibold text-gray-700 mt-10 mb-3'>Our Services</h2>
+            <p className='text-center text-gray-400 text-sm mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate vel possimus enim, fugiat et.</p>
             <div className=" mx-auto lg:mx-0 px-5 lg:px-0 grid lg:grid-cols-5 grid-cols-2 gap-5 lg:gap-0">
                 <div className="text-center px-3 py-10 border hover:bg-primary Hover:text-white space-y-3">
                    <p className='text-4xl text-center mx-auto hover:text-white'><BsLockFill className='text-center mx-auto text-gray-600'></BsLockFill> </p>
