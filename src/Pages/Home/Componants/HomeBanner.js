@@ -37,7 +37,6 @@ const HomeBanner = () => {
                 <Link className="text-sm link font font-medium">DISCOVER NOW</Link>
               </div>
             </div>
-            
           </div>
         </SwiperSlide>
           <div className="mx-auto w-full mt-[-8%] z-20">
@@ -60,6 +59,10 @@ const HomeBanner = () => {
             </div>
           </div>
         </SwiperSlide>
+        
+        <div className="mx-auto w-full mt-[-8%] z-20">
+              <img className="mx-auto" src={banner} alt="" />
+            </div>
       </Swiper>
     </div>
   );
