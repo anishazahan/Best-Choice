@@ -1,7 +1,7 @@
 import React from "react";
 import "../Home.css";
-import banner1 from "../../../assets/main-banner-01__29747.jpg";
-import banner2 from "../../../assets/main-bannre-2.jpg";
+import banner from "../../../assets/category-banner-watch__00751.original.jpg";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -24,7 +24,7 @@ const HomeBanner = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="slider-banner ">
+          <div className="slider-banner z-10 ">
             <div className="flex flex-col justify-start pt-[9%] pl-[15%]">
               <h1 className="text-black text-2xl font-extrabold text-left mb-3">IPHONE-X</h1>
 
@@ -37,8 +37,12 @@ const HomeBanner = () => {
                 <Link className="text-sm link font font-medium">DISCOVER NOW</Link>
               </div>
             </div>
+            
           </div>
         </SwiperSlide>
+          <div className="mx-auto w-full mt-[-8%] z-20">
+              <img className="mx-auto" src={banner} alt="" />
+            </div>
 
         <SwiperSlide>
           <div className="slider-banner2">
