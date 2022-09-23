@@ -1,5 +1,6 @@
 import React from 'react'
-import HomeBolg from '../Blog/HomeBolg'
+// import HomeBolg from '../Blog/HomeBolg'
+import RecommendenProducts from '../Products/RecommendenProducts'
 import HomeBanner from './Componants/HomeBanner'
 import Services from './Componants/Services'
 import Sponcer from './Componants/Sponcer'
@@ -15,7 +16,8 @@ const Home = () => {
       <OfferBanner></OfferBanner>
       <Sponcer></Sponcer>
       <Services></Services>
-      <HomeBolg></HomeBolg>
+      <RecommendenProducts></RecommendenProducts>
+      {/* <HomeBolg></HomeBolg> */}
       
     
     </div>

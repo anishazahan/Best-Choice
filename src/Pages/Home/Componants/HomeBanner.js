@@ -44,7 +44,7 @@ const HomeBanner = () => {
             </div>
 
         <SwiperSlide>
-          <div className="slider-banner2">
+          <div className="slider-banner2 z-10">
           <div className="flex flex-col justify-start pt-[9%] pl-[15%]">
               <h1 className="text-black text-2xl font-extrabold text-left mb-3">IPHONE-X</h1>
 
@@ -59,7 +59,7 @@ const HomeBanner = () => {
             </div>
           </div>
         </SwiperSlide>
-        
+
         <div className="mx-auto w-full mt-[-8%] z-20">
               <img className="mx-auto" src={banner} alt="" />
             </div>
