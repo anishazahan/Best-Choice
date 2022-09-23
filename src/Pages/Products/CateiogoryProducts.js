@@ -14,7 +14,7 @@ const CateiogoryProducts = () => {
         fetch('FeatureCateogory.json')
         .then(res=>res.json())
         .then(data=>setRecommendedProducts(data))
-        console.log(recommendedProducts);
+       
     },[])
   return (
     <div className=' my-16 mx-auto'>
