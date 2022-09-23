@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import logoImg from '../../assets/logo.png'
 import {FaUserAlt} from 'react-icons/fa'
 import {BsCartFill} from 'react-icons/bs'
@@ -10,9 +10,9 @@ const Navbar = () => {
   return (
     <div className='max-w-7xl mx-auto lg:px-5 px-6 md:px-10 overflow-hidden'>
             <div className="flex justify-between items-center flex-wrap lg:flex-nowrap">
-                <div className="logo lg:order-1">
-                    <img className='w-40' src={logoImg} alt="" />
-                </div>
+                <Link to='/' className="logo lg:order-1">
+                    <img className='w-40 hover:bg-transparent' src={logoImg} alt="" />
+                </Link>
                 <div className="menu lg:order-2 hidden lg:block">
                     <div className='flex items-center space-x-5'>
                         <NavLink to='/' className='active font-medium'>Home</NavLink>
