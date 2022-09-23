@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import useBlogs from '../../Hooks/useBlogs'
 import {AiFillFacebook,AiFillLinkedin,AiFillInstagram,AiFillTwitterSquare} from 'react-icons/ai'
 import { Link } from 'react-router-dom';
+import BlogDetails from './BlogDetails';
 
 const Blog = () => {
     const [allBlogs,setAllBlogs]=useState(false);
@@ -38,6 +39,7 @@ const Blog = () => {
        <div className="mr-auto my-5 ">
         <button className='link' onClick={()=>{setAllBlogs(!allBlogs)}}>{allBlogs? 'see less':'See More'}</button>
     </div>
+    <BlogDetails></BlogDetails>
     </div>
   )
 }

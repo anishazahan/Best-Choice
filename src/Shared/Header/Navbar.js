@@ -49,11 +49,12 @@ const Navbar = () => {
                      <div className={` block lg:hidden absolute top-20 z-30 ${openMenu? "right-0" : "-right-96"}`}>
                     <div className='flex space-y-3 flex-col items-center bg-violet-100'>
                         <NavLink to='/' className='active font-medium'>Home</NavLink>
-                        <NavLink to='about' className='active font-medium'>About</NavLink>
+                       
                         <NavLink to='products' className='active font-medium'>Products</NavLink>
                         <NavLink to='/' className='active font-medium'>Privacy Policy</NavLink>
                         <NavLink to='shipping' className='active font-medium'>Shiping & returns</NavLink>
                         <NavLink to='blog' className='active font-medium'>Blog</NavLink>
+                        <NavLink to='about' className='active font-medium'>About</NavLink>
                         <NavLink to='/' className='active font-medium'>Contact</NavLink>
                         <NavLink to='/' className='active font-medium'>other</NavLink>
                         </div>  
