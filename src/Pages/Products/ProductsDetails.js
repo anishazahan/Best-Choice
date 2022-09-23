@@ -77,9 +77,17 @@ const ProductsDetails = () => {
            
 
         </div>
-        <div className="product-description px-5 bg-violet-100 w-full max-w-7xl mx-auto mb-10">
+        <div className="product-description px-5 bg-violet-100 w-full max-w-7xl mx-auto mb-10 py-10">
                 <h2 className='text-[18px] font-semibold py-10'>Product Description</h2>
-                <p></p>
+                <p className='text-[13px]'>{details.description1}</p>
+                <h2 className='text-sm font-semibold mt-5 mb-3'>{details.descriptionTittle1}</h2>
+                <p className='text-[13px]'>{details.description2}</p>
+                <h2 className='text-sm font-semibold mt-5 mb-3'>{details.descriptionTittle2}</h2>
+                <ul>
+                    {/* {
+                       details.map((list)=> <li>{list.feature}</li> )
+                    } */}
+                </ul>
             </div>
 
         
