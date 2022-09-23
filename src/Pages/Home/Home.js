@@ -23,8 +23,7 @@ const Home = () => {
       <NewProducts></NewProducts>
       <HomeBolg></HomeBolg>
       <Sponcer></Sponcer>
-      
-      <BlogDetails></BlogDetails>
+
     </div>
   )
 }

@@ -7,7 +7,7 @@ const TopHeader = () => {
   return (
     <div className='top-header w-full'>
         <div className="flex h-full max-w-7xl px-8 justify-between mx-auto">
-            <div className="left flex space-x-5 items-center mx-auto md:mx-0">
+            <div className="left flex space-x-5 items-center">
                 <div className="flex items-center text-white h-full space-x-1">
                     <p><BsTelephoneFill></BsTelephoneFill> </p>
                     <p className='text-sm'>+287675546464</p>

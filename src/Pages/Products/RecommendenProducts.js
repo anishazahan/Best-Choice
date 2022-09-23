@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import './Products.css'
 import { Pagination, Navigation } from "swiper";
+import { useNavigate } from 'react-router-dom';
 
 const RecommendenProducts = () => {
     const [recommendedProducts,setRecommendedProducts] =useState([])
@@ -14,8 +15,15 @@ const RecommendenProducts = () => {
         fetch('featureProduct.json')
         .then(res=>res.json())
         .then(data=>setRecommendedProducts(data))
-        console.log(recommendedProducts);
+       
     },[])
+
+    const navigate = useNavigate();
+    const navigateToProductsDetails = (name)=>{
+        navigate(`products/products-details/${name}`)
+    }
+
+
   return (
     <div className='max-w-7xl my-16 mx-auto'>
             <div className="px-2 my-10">
@@ -51,7 +59,7 @@ const RecommendenProducts = () => {
       >
       {
         recommendedProducts.map(product=>{
-            return  <SwiperSlide> <div className=" mx-auto py-10 px-5 border text-left h-full hover:shadow-xl hover:shadow-2xl">
+            return  <SwiperSlide> <div onClick={()=> navigateToProductsDetails(product.name)} className=" mx-auto py-10 px-5 border text-left h-full hover:shadow-xl hover:shadow-2xl">
             <div className="">
                 <img className='hover:skew-y-6' src={product?.img} alt="" />
             </div>

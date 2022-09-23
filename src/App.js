@@ -9,6 +9,7 @@ import ShippingAndReturns from './Pages/ShippingAndReturns/ShippingAndReturns';
 import Blog from './Pages/Blog/Blog';
 import BlogDetails from './Pages/Blog/BlogDetails';
 import Products from './Pages/Products/Products';
+import ProductsDetails from './Pages/Products/ProductsDetails';
 
 
 
@@ -21,6 +22,7 @@ function App() {
        <Route path="/" element={<Home />} />
         <Route path="shipping" element={<ShippingAndReturns/>} />
         <Route path="products" element={<Products />} />
+        <Route path="products/products-details/:id" element={<ProductsDetails />} />
         <Route path="blog" element={<Blog />} />
         <Route path="about" element={<About/>} />
         <Route path="/blog-details/:id" element={<BlogDetails/>} />

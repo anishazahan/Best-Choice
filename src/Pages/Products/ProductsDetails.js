@@ -1,13 +1,23 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import img from '../../../src/assets/products.jpg'
 import {AiFillStar,} from 'react-icons/ai'
 import {MdOutlineStarHalf} from 'react-icons/md'
 import {FiChevronDown,FiChevronUp} from 'react-icons/fi'
 import {AiFillFacebook,AiFillLinkedin,AiFillInstagram,AiFillTwitterSquare} from 'react-icons/ai'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const ProductsDetails = () => {
+    const {name} = useParams();
+
     const [quantity,setQuantity] = useState(0)
+    const [details,setDetails] = useState([])
+    useEffect(()=>{
+        fetch('featureProduct.json')
+        .then(res=>res.json())
+        .then(data=>setDetails(data))
+    },[])
+
+
   return (
     <div>
         <div className="max-w-7xl mx-auto lg:px-10 px-5">
