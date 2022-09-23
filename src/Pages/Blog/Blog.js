@@ -9,7 +9,7 @@ const Blog = () => {
     const [blogs]=useBlogs();
   return (
     <div className='max-w-6xl mx-auto'>
-        <h2 className='text-2xl font-semibold my-10 text-center text-gray-800'>This is our Blog</h2>
+        <h2 className='text-2xl font-semibold my-14 text-center text-gray-800'>This is our Blog</h2>
        <div className="flex flex-col">
         {
             blogs && blogs.map(blog=>{

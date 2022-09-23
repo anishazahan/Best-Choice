@@ -16,10 +16,11 @@ const Navbar = () => {
                 <div className="menu lg:order-2 hidden lg:block">
                     <div className='flex items-center space-x-5'>
                         <NavLink to='/' className='active font-medium'>Home</NavLink>
-                        <NavLink to='about' className='active font-medium'>About</NavLink>
+                        
                         <NavLink to='products' className='active font-medium'>Products</NavLink>
                         <NavLink to='/' className='active font-medium'>Privacy Policy</NavLink>
                         <NavLink to='shipping' className='active font-medium'>Shiping & returns</NavLink>
+                        <NavLink to='about' className='active font-medium'>About</NavLink>
                         <NavLink to='blog' className='active font-medium'>Blog</NavLink>
                         <NavLink to='/' className='active font-medium'>Contact</NavLink>
                         <NavLink to='/' className='active font-medium'>other</NavLink>
