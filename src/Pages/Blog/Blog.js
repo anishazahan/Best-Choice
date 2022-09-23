@@ -39,7 +39,7 @@ const Blog = () => {
        <div className="mr-auto my-5 ">
         <button className='link' onClick={()=>{setAllBlogs(!allBlogs)}}>{allBlogs? 'see less':'See More'}</button>
     </div>
-    <BlogDetails></BlogDetails>
+    
     </div>
   )
 }

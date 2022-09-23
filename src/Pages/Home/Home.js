@@ -1,4 +1,5 @@
 import React from 'react'
+import BlogDetails from '../Blog/BlogDetails'
 import HomeBolg from '../Blog/HomeBolg'
 import CateiogoryProducts from '../Products/CateiogoryProducts'
 import NewProducts from '../Products/NewProducts'
@@ -23,7 +24,7 @@ const Home = () => {
       <HomeBolg></HomeBolg>
       <Sponcer></Sponcer>
       
-    
+      <BlogDetails></BlogDetails>
     </div>
   )
 }
