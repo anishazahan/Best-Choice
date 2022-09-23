@@ -15,14 +15,13 @@ const Home = () => {
     <div>
       <HomeBanner></HomeBanner>
       <SubBanner2></SubBanner2>
-      <OfferBanner></OfferBanner>
-      <Sponcer></Sponcer>
-      <Services></Services>
-
-      <CateiogoryProducts></CateiogoryProducts>
       <RecommendenProducts></RecommendenProducts>
+      <OfferBanner></OfferBanner>
+      <CateiogoryProducts></CateiogoryProducts>
+      <Services></Services>
       <NewProducts></NewProducts>
       <HomeBolg></HomeBolg>
+      <Sponcer></Sponcer>
       
     
     </div>

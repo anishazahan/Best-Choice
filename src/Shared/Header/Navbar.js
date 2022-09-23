@@ -45,7 +45,7 @@ const Navbar = () => {
                    <button onClick={()=>{
                       console.log(openMenu);
                       setOpenMenu(!openMenu)
-                    }} className='p-4 top-0 right-0 ml-10 text-black'> <RiMenu2Line></RiMenu2Line> </button>
+                    }} className='px-4 top-0 right-0 ml-10 text-black text-3xl '> <RiMenu2Line></RiMenu2Line> </button>
                      <div className={` block lg:hidden absolute top-20 z-30 ${openMenu? "right-0" : "-right-96"}`}>
                     <div className='flex space-y-3 flex-col items-center bg-violet-100'>
                         <NavLink to='/' className='active font-medium'>Home</NavLink>
