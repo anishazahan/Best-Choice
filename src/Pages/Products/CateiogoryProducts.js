@@ -19,9 +19,9 @@ const CateiogoryProducts = () => {
   return (
     <div className=' my-16 mx-auto'>
             <div className="px-2 my-10">
-                <h2 className='text-sm font-bold'>New Cateiogory</h2>
+                <h2 className='text-sm uppercase px-2 font-bold'>New Cateiogory</h2>
             </div>
-          <div className="feture-background">
+          <div className="bg-violet-100 py-20">
           <div className="max-w-7xl mx-auto">
           <Swiper
         slidesPerView={1}
@@ -55,10 +55,10 @@ const CateiogoryProducts = () => {
         recommendedProducts.map(product=>{
             return  <SwiperSlide>
                 <div className="">
-                    <div className=" bg-white py-10 px-5">
+                    <div className=" bg-white px-5">
                         <img src={product.img} alt="" />
                     </div>
-                    <h2 className='text-sm font-semibold'>{product.name}</h2>
+                    <h2 className='text-sm text-center font-semibold'>{product.name}</h2>
                 </div>
             </SwiperSlide>
             
