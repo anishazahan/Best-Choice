@@ -19,8 +19,8 @@ const RecommendenProducts = () => {
     },[])
 
     const navigate = useNavigate();
-    const navigateToProductsDetails = (name)=>{
-        navigate(`products/products-details/${name}`)
+    const navigateToProductsDetails = (id)=>{
+        navigate(`products/products-details/${id}`)
     }
 
 
@@ -59,7 +59,7 @@ const RecommendenProducts = () => {
       >
       {
         recommendedProducts.map(product=>{
-            return  <SwiperSlide> <div onClick={()=> navigateToProductsDetails(product.name)} className=" mx-auto py-10 px-5 border text-left h-full hover:shadow-xl hover:shadow-2xl">
+            return  <SwiperSlide> <div onClick={()=> navigateToProductsDetails(product.id)} className=" mx-auto py-10 px-5 border text-left h-full hover:shadow-xl hover:shadow-2xl">
             <div className="">
                 <img className='hover:skew-y-6' src={product?.img} alt="" />
             </div>

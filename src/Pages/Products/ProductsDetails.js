@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from 'react'
-import img from '../../../src/assets/products.jpg'
+
 import {AiFillStar,} from 'react-icons/ai'
 import {MdOutlineStarHalf} from 'react-icons/md'
 import {FiChevronDown,FiChevronUp} from 'react-icons/fi'
 import {AiFillFacebook,AiFillLinkedin,AiFillInstagram,AiFillTwitterSquare} from 'react-icons/ai'
 import { Link, useParams } from 'react-router-dom'
+import axios from 'axios'
 
 const ProductsDetails = () => {
-    const {name} = useParams();
+    const {id} = useParams();
+    // console.log(id)
 
     const [quantity,setQuantity] = useState(0)
     const [details,setDetails] = useState([])
     useEffect(()=>{
-        fetch('featureProduct.json')
-        .then(res=>res.json())
+        axios.get('https://raw.githubusercontent.com/anishazahan/Best-Choice/main/public/featureProduct.json')
+     
         .then(data=>
             {
-                const findDetails = data.data.find(details=>details.name === name)
-       
+                const findDetails =data.data.find(details=>details.id === id)
                 setDetails(findDetails);
             })
     },[])
@@ -28,13 +29,13 @@ const ProductsDetails = () => {
         <div className="max-w-7xl mx-auto lg:px-10 px-5">
             <div className="flex flex-col lg:flex-row">
                 <div className="w-full img basis-6/12 border my-16 ">
-                    <img className='w-8/12 lg:w-10/12 mx-auto' src={details.img} alt="" />
+                    <img className='w-8/12 lg:w-10/12 mx-auto' src={details?.img} alt="" />
                 </div>
 
                 <div className="product-details basis-6/12 lg:mt-28 ml-10">
                     <div className="">
-                        <p className='text-gray-400 text-sm'>Apple</p>
-                        <h2 className='text-[20px] font-semibold text-gray-700'>{details.name}</h2>
+                        <p className='text-gray-400 text-sm'>{details.brand}</p>
+                        <h2 className='text-[20px] font-semibold text-gray-700'>{details?.name}</h2>
                         <div className="flex items-center space-x-2">
                         <div className="icons flex flex-row space-x-1 mt-3">
                            <AiFillStar className='text-sm text-secondary'></AiFillStar> 
@@ -47,10 +48,10 @@ const ProductsDetails = () => {
                         <p className='text-[13px] text-gray-700 mt-2 link'>Write a rivew</p>
                         </div>
                         <p className='text-gray-600 text-sm mt-7'>SKU:BOOQ-MAMBO</p>
-                        <p className='text-gray-600 text-sm mt-2'>Weight:1.00 LBS</p>
+                        <p className='text-gray-600 text-sm mt-2'>Weight:{details.Weight}</p>
                         <p className='text-gray-600 text-sm mt-2 mb-4'>Shipping:Calculated at Checkout</p>
                         <hr />
-                        <h2 className='text-[18px] font-semibold mt-3 mb-4'>Price:29.00$</h2>
+                        <h2 className='text-[18px] font-semibold mt-3 mb-4'>Price:{details.price}$</h2>
                         <div className="flex items-center space-x-3">
                             <h1>Quantity: </h1>
                           <div className="flex space-x-4 items-center">
