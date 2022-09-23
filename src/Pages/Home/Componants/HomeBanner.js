@@ -19,7 +19,7 @@ const HomeBanner = () => {
           delay: 4500,
           disableOnInteraction: false,
         }}
-        navigation={true}
+       
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
@@ -27,7 +27,6 @@ const HomeBanner = () => {
           <div className="slider-banner z-10 ">
             <div className="flex flex-col justify-start pt-[9%] pl-[15%]">
               <h1 className="text-black text-2xl font-extrabold text-left mb-3">IPHONE-X</h1>
-
               <div className="text-left">
                 <button className="py-2 text-xs px-7 rounded-full border border-1 border-secondary text-secondary font-bold hover:tracking-wider transition-all">
                   POWERFUL, STUNNING & NOW EVEN BIGGER
