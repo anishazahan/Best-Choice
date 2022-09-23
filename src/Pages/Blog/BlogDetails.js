@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 const BlogDetails = () => {
+
     const {id} = useParams()
+    const [blogDetails,setBlogDetails] =useState([]);
+    useEffect(()=>{
+      fetch('Blog.json')
+      .then(res=>res.json())
+      .then(data=>setBlogDetails(data))
+      
+    },[])
+    console.log(blogDetails);
+
   return (
     <div>
-
-        <h2>This is blog details</h2>
+       
+        
     </div>
   )
 }

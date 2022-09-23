@@ -9,13 +9,14 @@ import { Link } from 'react-router-dom'
 const ProductsDetails = () => {
     const [quantity,setQuantity] = useState(0)
   return (
-    <>
+    <div>
         <div className="max-w-7xl mx-auto lg:px-10 px-5">
             <div className="flex flex-col lg:flex-row">
                 <div className="w-full img basis-6/12 border my-16 ">
-                    <img className='w-full' src={img} alt="" />
+                    <img className='w-8/12 lg:w-10/12 mx-auto' src={img} alt="" />
                 </div>
-                <div className="product-details basis-6/12 mt-28 ml-10">
+
+                <div className="product-details basis-6/12 lg:mt-28 ml-10">
                     <div className="">
                         <p className='text-gray-400 text-sm'>Apple</p>
                         <h2 className='text-[20px] font-semibold text-gray-700'>booq Mamba Saddle sheets</h2>
@@ -57,10 +58,16 @@ const ProductsDetails = () => {
                 </div>
             </div>
 
+           
+
         </div>
+        <div className="product-description px-5 bg-violet-100 w-full max-w-7xl mx-auto mb-10">
+                <h2 className='text-[18px] font-semibold py-10'>Product Description</h2>
+                <p></p>
+            </div>
 
         
-    </>
+    </div>
   )
 }
 

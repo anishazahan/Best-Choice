@@ -1,5 +1,6 @@
 import React from 'react'
-// import HomeBolg from '../Blog/HomeBolg'
+import HomeBolg from '../Blog/HomeBolg'
+import CateiogoryProducts from '../Products/CateiogoryProducts'
 import RecommendenProducts from '../Products/RecommendenProducts'
 import HomeBanner from './Componants/HomeBanner'
 import Services from './Componants/Services'
@@ -16,8 +17,9 @@ const Home = () => {
       <OfferBanner></OfferBanner>
       <Sponcer></Sponcer>
       <Services></Services>
+      <CateiogoryProducts></CateiogoryProducts>
       <RecommendenProducts></RecommendenProducts>
-      {/* <HomeBolg></HomeBolg> */}
+      <HomeBolg></HomeBolg>
       
     
     </div>

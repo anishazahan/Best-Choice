@@ -32,3 +32,9 @@
     height: 100%;
     object-fit: cover;
   }
+  .feture-background{
+    background: url('../../assets/fetureBg.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+   
+  }

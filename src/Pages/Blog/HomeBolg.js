@@ -12,18 +12,14 @@ const HomeBolg = () => {
   // },[])
 
   const [blogs] = useBlogs();
-  const navigate = useNavigate();
-  const navigateBlogDetails = (id) => {
-    navigate(`/blog-details/${id}`);
-  };
+ 
 
   return (
     <div className="max-w-7xl mx-auto">
       <h1 className="text-2xl font-semibold">Our latest Blog</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 m-0 p-0">
-        {blogs
-          .map((blog) => {
-            <div onClick={() => navigateBlogDetails(blog.id)}>
+        {blogs.map(blog => 
+            <Link to={`/blog-details/${blog.id}`}>
               <div className=" my-5 p-5 lg:p-0 m-0">
                 <div className="">
                   <img className="w-full" src={blog.img} alt="" />
@@ -41,14 +37,14 @@ const HomeBolg = () => {
                   </button>
                 </div>
               </div>
-            </div>;
-          })
+            </Link>
+          )
           .slice(0, 2)}
       </div>
       <div className="text-right mb-16 lg:mt-10 mr-4">
-        <button className="text-secondary link font-medium text-sm">
+        <Link to='/blog' className="text-secondary link font-medium text-sm">
           See More
-        </button>
+        </Link>
       </div>
     </div>
   );

@@ -8,20 +8,22 @@ import "swiper/css/navigation";
 import './Products.css'
 import { Pagination, Navigation } from "swiper";
 
-const RecommendenProducts = () => {
+const CateiogoryProducts = () => {
     const [recommendedProducts,setRecommendedProducts] =useState([])
     useEffect(()=>{
-        fetch('featureProduct.json')
+        fetch('FeatureCateogory.json')
         .then(res=>res.json())
         .then(data=>setRecommendedProducts(data))
         console.log(recommendedProducts);
     },[])
   return (
-    <div className='max-w-7xl my-16 mx-auto'>
+    <div className=' my-16 mx-auto'>
             <div className="px-2 my-10">
-                <h2 className='text-sm font-bold'>RECOMMENDED FOR YOU</h2>
+                <h2 className='text-sm font-bold'>New Cateiogory</h2>
             </div>
-            <Swiper
+          <div className="feture-background">
+          <div className="max-w-7xl mx-auto">
+          <Swiper
         slidesPerView={1}
         spaceBetween={5}
        
@@ -51,27 +53,23 @@ const RecommendenProducts = () => {
       >
       {
         recommendedProducts.map(product=>{
-            return  <SwiperSlide> <div className=" mx-auto py-10 px-5 border text-left h-full hover:shadow-xl hover:shadow-2xl">
-            <div className="">
-                <img className='hover:skew-y-6' src={product?.img} alt="" />
-            </div>
-            <h2 className='text-[16px] font-semibold'>{product.name}</h2>
-            <div className="icons flex flex-row space-x-1 mt-3">
-                           <AiFillStar className='text-sm text-secondary'></AiFillStar> 
-                           <AiFillStar className='text-sm text-secondary'></AiFillStar> 
-                           <AiFillStar className='text-sm text-secondary'></AiFillStar> 
-                           <AiFillStar className='text-sm text-secondary'></AiFillStar> 
-                           <MdOutlineStarHalf className='text-sm text-secondary'></MdOutlineStarHalf> 
-                        </div>
-                        <h2 className='text-xl font-semibold'>{product.price}$</h2>
-        </div></SwiperSlide>
+            return  <SwiperSlide>
+                <div className="">
+                    <div className=" bg-white py-10 px-5">
+                        <img src={product.img} alt="" />
+                    </div>
+                    <h2 className='text-sm font-semibold'>{product.name}</h2>
+                </div>
+            </SwiperSlide>
             
         })
       }
        
       </Swiper>
+          </div>
+          </div>
     </div>
   )
 }
 
-export default RecommendenProducts
+export default CateiogoryProducts
