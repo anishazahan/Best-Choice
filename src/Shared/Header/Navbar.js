@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import logoImg from '../../assets/logo.png'
 import {FaUserAlt} from 'react-icons/fa'
 import {BsCartFill} from 'react-icons/bs'
+import {RiMenu2Line} from 'react-icons/ri'
 
 const Navbar = () => {
   const [openMenu,setOpenMenu]= useState(false);
@@ -44,7 +45,7 @@ const Navbar = () => {
                    <button onClick={()=>{
                       console.log(openMenu);
                       setOpenMenu(!openMenu)
-                    }} className='p-4 top-0 right-0 ml-10'>Menu</button>
+                    }} className='p-4 top-0 right-0 ml-10 text-black'> <RiMenu2Line></RiMenu2Line> </button>
                      <div className={` block lg:hidden absolute top-20 z-30 ${openMenu? "right-0" : "-right-96"}`}>
                     <div className='flex space-y-3 flex-col items-center bg-violet-100'>
                         <NavLink to='/' className='active font-medium'>Home</NavLink>

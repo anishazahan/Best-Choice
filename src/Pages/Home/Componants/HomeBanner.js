@@ -58,7 +58,7 @@ const HomeBanner = () => {
             </div>
           </div>
         </SwiperSlide>
-        <div className="mx-auto lg:w-full -translate-y-20  z-20 relative w-10/12">
+        <div className="mx-auto lg:w-full -translate-y-30 md:-translate-y-30  lg:-translate-y-20  z-20 relative w-10/12">
               <img className="mx-auto" src={banner} alt="" />
             </div>
         

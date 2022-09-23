@@ -17,12 +17,12 @@ const TopHeader = () => {
                     <p className='text-sm'>contact@gmail.com</p>
                 </div>
             </div>
-            <div className="right flex space-x-5 items-center ">
+            <div className="right flex space-x-5 items-center">
                 <div className="flex items-center text-white h-full space-x-1">
                     
                     <Link to='/' className='text-sm link'>FAQS</Link>
                 </div>
-                <div className="flex items-center text-white h-full space-x-1">
+                <div className="flex items-center text-white h-full space-x-1 ">
                     
                     <Link to='/' className='text-sm link'>Need Help?</Link>
                 </div>
