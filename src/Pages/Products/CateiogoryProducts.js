@@ -54,7 +54,7 @@ const CateiogoryProducts = () => {
       {
         recommendedProducts.map(product=>{
             return  <SwiperSlide>
-                <div className="">
+                <div className="px-5 lg:px-0">
                     <div className=" bg-white px-5">
                         <img src={product.img} alt="" />
                     </div>
