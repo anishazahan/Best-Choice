@@ -32,9 +32,13 @@ const Navbar = () => {
 
 
                 <div className="cart-icons flex items-center space-x-3 lg:order-3">
-                    <p>Login</p>
-                    <p><FaUserAlt></FaUserAlt> </p>
-                    <p><BsCartFill></BsCartFill> </p>
+                    <button className='px-5 py-[5px] border font-medium border-secondary'>Login</button>
+                    <p className='text-xl'><FaUserAlt></FaUserAlt> </p>
+                    <div className="indicator">
+                <span className="indicator-item badge badge-secondary">2</span> 
+                <button className="text-2xl p-2"><BsCartFill></BsCartFill></button>
+              </div>
+                                  {/*  </p> */}
                     <p>Admin</p>
                    
                 </div>
