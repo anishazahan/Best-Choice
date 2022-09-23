@@ -24,7 +24,6 @@ const NewProducts = () => {
             <Swiper
         slidesPerView={1}
         spaceBetween={5}
-       
         loop={true}
         breakpoints={{
             640: {
@@ -44,7 +43,6 @@ const NewProducts = () => {
               spaceBetween: 10,
             },
           }}
-       
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
@@ -65,13 +63,10 @@ const NewProducts = () => {
                         </div>
                         <h2 className='text-xl font-semibold'>{product.price}$</h2>
         </div></SwiperSlide>
-            
         })
       }
-       
       </Swiper>
     </div>
   )
 }
-
 export default NewProducts
