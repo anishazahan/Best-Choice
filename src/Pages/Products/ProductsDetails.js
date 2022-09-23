@@ -14,7 +14,12 @@ const ProductsDetails = () => {
     useEffect(()=>{
         fetch('featureProduct.json')
         .then(res=>res.json())
-        .then(data=>setDetails(data))
+        .then(data=>
+            {
+                const findDetails = data.data.find(details=>details.name === name)
+       
+                setDetails(findDetails);
+            })
     },[])
 
 
@@ -23,13 +28,13 @@ const ProductsDetails = () => {
         <div className="max-w-7xl mx-auto lg:px-10 px-5">
             <div className="flex flex-col lg:flex-row">
                 <div className="w-full img basis-6/12 border my-16 ">
-                    <img className='w-8/12 lg:w-10/12 mx-auto' src={img} alt="" />
+                    <img className='w-8/12 lg:w-10/12 mx-auto' src={details.img} alt="" />
                 </div>
 
                 <div className="product-details basis-6/12 lg:mt-28 ml-10">
                     <div className="">
                         <p className='text-gray-400 text-sm'>Apple</p>
-                        <h2 className='text-[20px] font-semibold text-gray-700'>booq Mamba Saddle sheets</h2>
+                        <h2 className='text-[20px] font-semibold text-gray-700'>{details.name}</h2>
                         <div className="flex items-center space-x-2">
                         <div className="icons flex flex-row space-x-1 mt-3">
                            <AiFillStar className='text-sm text-secondary'></AiFillStar> 

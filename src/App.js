@@ -10,6 +10,7 @@ import Blog from './Pages/Blog/Blog';
 import BlogDetails from './Pages/Blog/BlogDetails';
 import Products from './Pages/Products/Products';
 import ProductsDetails from './Pages/Products/ProductsDetails';
+import NotFound from './Pages/NotFound';
 
 
 
@@ -26,8 +27,10 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="about" element={<About/>} />
         <Route path="/blog-details/:id" element={<BlogDetails/>} />
+        <Route path="*" element={<NotFound/>} />
        </Routes>
        <Footer></Footer>
+     
     </div>
   );
 }
