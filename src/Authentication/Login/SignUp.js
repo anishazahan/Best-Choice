@@ -1,7 +1,7 @@
 import React from 'react'
 import auth from '../../firebase.init';
 import './Login.css'
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import googleIcon from '../../assets/googleIcon.png'
 import { useForm } from "react-hook-form";
 import Loading from './Loading';
@@ -16,11 +16,12 @@ const SignUp = () => {
 
     const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
     const [
-        signInWithEmailAndPassword,
+        createUserWithEmailAndPassword,
         user,
         loading,
         error,
-      ] = useSignInWithEmailAndPassword(auth);
+      ] = useCreateUserWithEmailAndPassword(auth);
+      const [updateProfile, updating, updateError] = useUpdateProfile(auth);
     if(gloading || loading){
         return <Loading></Loading>
     }
@@ -32,7 +33,7 @@ const SignUp = () => {
         }
 
     const onSubmit = data =>{
-       signInWithEmailAndPassword(data.email,data.password)
+        createUserWithEmailAndPassword(data.email,data.password)
        console.log(data);
       
     };
@@ -41,7 +42,7 @@ const SignUp = () => {
   return (
     <>
         <div className="login-background relative flex justify-center">
-                <div className="login-box bg-white absolute shadow-md pt-10 mt-10 pl-7 pr-10 pb-16 w-[90%] md:w-[70%] lg:w-[35%]">
+                <div className="login-box bg-white absolute shadow-md pt-10 mt-8 pl-7 pr-10 pb-12 w-[90%] md:w-[70%] lg:w-[35%]">
                     <h2 className='text-2xl font-semibold mb-7'>Please SignUp!!</h2>
                     <div onClick={() => signInWithGoogle()} className="border flex justify-center">
                     <img className='w-10' src={googleIcon} alt="" />
