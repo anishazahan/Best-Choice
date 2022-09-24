@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import Loading from './Loading';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const SignUp = () => {
     const {
         register,
         formState: { errors },
@@ -42,7 +42,7 @@ const Login = () => {
     <>
         <div className="login-background relative flex justify-center">
                 <div className="login-box bg-white absolute shadow-md pt-10 mt-10 pl-7 pr-10 pb-16 w-[90%] md:w-[70%] lg:w-[35%]">
-                    <h2 className='text-2xl font-semibold mb-7'>Please Login!!</h2>
+                    <h2 className='text-2xl font-semibold mb-7'>Please SignUp!!</h2>
                     <div onClick={() => signInWithGoogle()} className="border flex justify-center">
                     <img className='w-10' src={googleIcon} alt="" />
                     <button className='py-2 pr-10 pl-5 font-medium'> Continue With Google</button>
@@ -51,6 +51,25 @@ const Login = () => {
 
                     <form className='w-full' onSubmit={handleSubmit(onSubmit)}>
      
+     <input
+       type="text"
+       className=" pl-3 py-[10px] placeholder-black form-control w-full bg-transparent border border-2 outline-none text-sm text-black font-medium mb-5 focus:border-secondary"
+       placeholder="Your Name"
+       {...register("name", {
+         required: {
+           value: true,
+           message: "Name must be Required",
+         }
+       })}
+     />
+     <div className="mb-2">
+       {errors.name?.type === "required" && (
+         <p className="text-sm text-red-600 mb-2 ">
+           {errors.name.message}
+         </p>
+       )}
+      
+     </div>
      <input
        type="email"
        className=" pl-3 py-[10px] placeholder-black form-control w-full bg-transparent border border-2 outline-none text-sm text-black font-medium mb-5 focus:border-secondary"
@@ -111,11 +130,11 @@ const Login = () => {
      </div>
         { loginError}
        
-  <input type="submit" value="Login" className="w-full bg-primary text-white hover:opacity-70 cursor-pointer font-semibold px-4 py-2 mt-3 mb-5" />
+  <input type="submit" value="Sign-Up" className="w-full bg-primary text-white hover:opacity-70 cursor-pointer font-semibold px-4 py-2 mt-3 mb-5" />
  </form>
  <div className="flex justify-between">
-    <p className='font-medium text-gray-500'>New To Best Choice?</p>
-    <Link to='/sign-up' className='text-meduim link text-secondary'>Create New Account</Link>
+    <p className='font-medium text-gray-500'>Already Have an account?</p>
+    <Link to='/login' className='text-meduim link text-secondary'>Please Login.</Link>
  </div>
         </div>
         </div>
@@ -123,4 +142,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default SignUp
