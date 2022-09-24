@@ -12,6 +12,7 @@ import Products from './Pages/Products/Products';
 import ProductsDetails from './Pages/Products/ProductsDetails';
 import NotFound from './Pages/NotFound';
 import NewProductsDetails from './Pages/Products/NewProductsDetails';
+import Login from './Authentication/Login/Login';
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="products/products-details/:name" element={<NewProductsDetails />} />
         <Route path="blog" element={<Blog />} />
         <Route path="about" element={<About/>} />
+        <Route path="login" element={<Login/>} />
         <Route path="/blog-details/:id" element={<BlogDetails/>} />
         
         <Route path="*" element={<NotFound/>} />

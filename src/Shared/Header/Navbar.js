@@ -44,9 +44,9 @@ const Navbar = () => {
         </div>
 
         <div className="cart-icons flex items-center space-x-3 lg:order-3">
-          <button className="px-5 py-[5px] border font-medium border-secondary">
+          <Link to='login' className="px-5 py-[5px] border font-medium border-secondary">
             Login
-          </button>
+          </Link>
           <p className="text-xl">
             <FaUserAlt></FaUserAlt>{" "}
           </p>
