@@ -24,7 +24,11 @@ const Login = () => {
         return <Loading></Loading>
     }
       
+        let loginError;
 
+        if(gerror || error){
+            loginError =<p className='text-sm text-red-600'>{error?.message || gerror?.message} </p>
+        }
 
     const onSubmit = data =>{
        signInWithEmailAndPassword(data.email,data.password)
@@ -63,12 +67,12 @@ const Login = () => {
      />
      <div className="mb-2">
        {errors.email?.type === "required" && (
-         <p className="text-xs text-red-600 mb-2 ">
+         <p className="text-sm text-red-600 mb-2 ">
            {errors.email.message}
          </p>
        )}
        {errors.email?.type === "pattern" && (
-         <p className="text-xs text-red-600 mb-2 ">
+         <p className="text-sm text-red-600 mb-2 ">
            {errors.email.message}
          </p>
        )}
@@ -94,17 +98,17 @@ const Login = () => {
 
      <div className=" mb-2 ">
        {errors.password?.type === "required" && (
-         <p className="text-xs text-red-600 mb-2 ">
+         <p className="text-sm text-red-600 mb-2 ">
            {errors.password.message}
          </p>
        )}
        {errors.password?.type === "minLength" && (
-         <p className="text-xs text-red-600">
+         <p className="text-sm text-red-600">
            {errors.password.message}
          </p>
        )}
      </div>
-  
+        { loginError}
        
   <input type="submit" value="Login" className="w-full bg-primary text-white hover:opacity-70 cursor-pointer font-semibold px-4 py-2 mt-3 mb-5" />
  </form>
