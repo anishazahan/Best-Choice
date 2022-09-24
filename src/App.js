@@ -14,6 +14,7 @@ import NotFound from './Pages/NotFound';
 import NewProductsDetails from './Pages/Products/NewProductsDetails';
 import Login from './Authentication/Login/Login';
 import SignUp from './Authentication/Login/SignUp';
+import RequireAuth from './Authentication/Login/RequireAuth';
 
 
 
@@ -29,7 +30,7 @@ function App() {
         <Route path="products/products-details/:id" element={<ProductsDetails />} />
         <Route path="products/products-details/:name" element={<NewProductsDetails />} />
         <Route path="blog" element={<Blog />} />
-        <Route path="about" element={<About/>} />
+        <Route path="about" element={ <RequireAuth><About/></RequireAuth> } />
         <Route path="login" element={<Login/>} />
         <Route path="sign-up" element={<SignUp/>} />
         <Route path="/blog-details/:id" element={<BlogDetails/>} />

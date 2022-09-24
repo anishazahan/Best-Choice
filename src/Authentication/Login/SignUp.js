@@ -27,18 +27,19 @@ const SignUp = () => {
     }
       
         let loginError;
-        
+       
 
         if(gerror || error){
             loginError =<p className='text-sm text-red-600'>{error?.message || gerror?.message || updateError?.message} </p>
         }
-
+        
+        // const navigate = useNavigate();
     const onSubmit =async data =>{
         console.log(data);
         await createUserWithEmailAndPassword(data.email,data.password)
         await updateProfile({ displayName: data.name});
         console.log("update done")
-      
+    //   navigate ('/home')
       
     };
     
