@@ -5,7 +5,7 @@ import { useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword, useSi
 import googleIcon from '../../assets/googleIcon.png'
 import { useForm } from "react-hook-form";
 import Loading from './Loading';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
     const {
@@ -27,14 +27,18 @@ const SignUp = () => {
     }
       
         let loginError;
+        
 
         if(gerror || error){
-            loginError =<p className='text-sm text-red-600'>{error?.message || gerror?.message} </p>
+            loginError =<p className='text-sm text-red-600'>{error?.message || gerror?.message || updateError?.message} </p>
         }
 
-    const onSubmit = data =>{
-        createUserWithEmailAndPassword(data.email,data.password)
-       console.log(data);
+    const onSubmit =async data =>{
+        console.log(data);
+        await createUserWithEmailAndPassword(data.email,data.password)
+        await updateProfile({ displayName: data.name});
+        console.log("update done")
+      
       
     };
     

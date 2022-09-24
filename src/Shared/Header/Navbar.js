@@ -4,9 +4,16 @@ import logoImg from "../../assets/logo.png";
 import { FaUserAlt } from "react-icons/fa";
 import { BsCartFill } from "react-icons/bs";
 import { RiMenu2Line } from "react-icons/ri";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [user, loading, error] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+  };
   return (
     <div className="max-w-7xl mx-auto lg:px-5 px-6 md:px-10">
       <div className="flex justify-between items-center flex-wrap lg:flex-nowrap">
@@ -44,9 +51,13 @@ const Navbar = () => {
         </div>
 
         <div className="cart-icons flex items-center space-x-3 lg:order-3">
-          <Link to='login' className="px-5 py-[5px] border font-medium border-secondary">
+          {
+            user? <Link onClick={logout} to='login' className="px-5 py-[5px] border font-medium border-secondary">
+            SignOut</Link>
+          :<Link to='login' className="px-5 py-[5px] border font-medium border-secondary">
             Login
           </Link>
+          }
           <p className="text-xl">
             <FaUserAlt></FaUserAlt>{" "}
           </p>
