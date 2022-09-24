@@ -25,7 +25,7 @@ const Login = () => {
   return (
     <>
         <div className="login-background relative flex justify-center">
-                <div className="login-box bg-white absolute shadow-md pt-10 mt-10 pl-7 pr-10 pb-14 w-[35%]">
+                <div className="login-box bg-white absolute shadow-md pt-10 mt-10 pl-7 pr-10 pb-14 w-[90%] md:w-[70%] lg:w-[35%]">
                     <h2 className='text-2xl font-semibold mb-7'>Please Login!!</h2>
                     <div onClick={() => signInWithGoogle()} className="border flex justify-center">
                     <img className='w-10' src={googleIcon} alt="" />
@@ -97,6 +97,10 @@ const Login = () => {
        
   <input type="submit" value="Login" className="w-full bg-primary text-white hover:opacity-70 cursor-pointer font-semibold px-4 py-2 mt-3 mb-5" />
  </form>
+ <div className="flex justify-between">
+    <p className='font-medium text-gray-500'>New To Best Choice?</p>
+    <p className='text-meduim link'>Create New Account</p>
+ </div>
         </div>
         </div>
     </>
