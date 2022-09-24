@@ -27,17 +27,17 @@ const Login = () => {
         <div className="login-background relative flex justify-center">
                 <div className="login-box bg-white absolute shadow-md pt-10 mt-10 pl-7 pr-10 pb-14 w-[35%]">
                     <h2 className='text-2xl font-semibold mb-7'>Please Login!!</h2>
-                    <div onClick={() => signInWithGoogle()} className="border flex">
+                    <div onClick={() => signInWithGoogle()} className="border flex justify-center">
                     <img className='w-10' src={googleIcon} alt="" />
                     <button className='py-2 pr-10 pl-5 font-medium'> Continue With Google</button>
                     </div>
-                    <div className="divider">OR</div>
+                    <div className="divider my-7">OR</div>
 
                     <form className='w-full' onSubmit={handleSubmit(onSubmit)}>
      
      <input
        type="email"
-       className=" pl-3 py-[10px] placeholder-black form-control w-full bg-transparent border border-2 outline-none text-sm text-black font-medium mb-2 focus:border-secondary"
+       className=" pl-3 py-[10px] placeholder-black form-control w-full bg-transparent border border-2 outline-none text-sm text-black font-medium mb-5 focus:border-secondary"
        placeholder="Your Email"
        {...register("email", {
          required: {
@@ -67,7 +67,7 @@ const Login = () => {
   
      <input
        type="password"
-       className="form form-control py-2 pl-3 mt-3 "
+       className="pl-3 py-[10px] placeholder-black form-control w-full bg-transparent border border-2 outline-none text-sm text-black font-medium mb-2 focus:border-secondary "
        placeholder="Your Password"
        {...register("password", {
          required: {
@@ -83,19 +83,19 @@ const Login = () => {
 
      <div className=" mb-2 ">
        {errors.password?.type === "required" && (
-         <p className="font-medium text-danger mb-3 ">
+         <p className="text-xs text-red-600 mb-2 ">
            {errors.password.message}
          </p>
        )}
        {errors.password?.type === "minLength" && (
-         <p className="font-medium text-danger">
+         <p className="text-xs text-red-600">
            {errors.password.message}
          </p>
        )}
      </div>
   
        
-  <input type="submit" value="Login" className="btn btn-info fw-bold px-4 py-2 mt-3 mb-5" />
+  <input type="submit" value="Login" className="w-full bg-primary text-white hover:opacity-70 cursor-pointer font-semibold px-4 py-2 mt-3 mb-5" />
  </form>
         </div>
         </div>
