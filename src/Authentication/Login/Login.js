@@ -1,23 +1,34 @@
 import React from 'react'
 import auth from '../../firebase.init';
 import './Login.css'
-import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import googleIcon from '../../assets/googleIcon.png'
 import { useForm } from "react-hook-form";
+import Loading from './Loading';
 
 const Login = () => {
-    const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const {
         register,
         formState: { errors },
         handleSubmit,
       } = useForm();
+
+    const [signInWithGoogle, guser, gloading, gerror] = useSignInWithGoogle(auth);
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useSignInWithEmailAndPassword(auth);
+    if(gloading || loading){
+        return <Loading></Loading>
+    }
       
+
+
     const onSubmit = data =>{
-        if(errors){
-            
-            console.log(errors)
-        }
+       signInWithEmailAndPassword(data.email,data.password)
+       console.log(data);
       
     };
     
