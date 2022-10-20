@@ -8,7 +8,7 @@ const MinimizeBlogs = ({blog}) => {
     
   return (
     <>
-    <div onClick={()=>navigate(`/blog-details/${blog.id}`)} className="flex flex-col lg:flex-row px-5 lg:px-10 mb-10">
+    <div onClick={()=>navigate(`/blog-details/${blog.id}`)} className="flex flex-col lg:flex-row px-5 lg:px-10 mb-10 cursor-pointer">
                             <img className='w-2/4' src={blog.img} alt="" />
                        <div className="ml-5 mt-3 lg:mt-16">
                        <h2 className='font-xl mb-3 font-bold'>{blog.tittle}</h2>

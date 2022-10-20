@@ -7,7 +7,7 @@ import ScrollToTop from "react-scroll-to-top";
 const Footer = () => {
   return (
     <div className="footer-section">
-    <ScrollToTop smooth padding-left='3px' top='1000'/>
+    <ScrollToTop smooth  top='1000'/>
     <footer className=" px-5 md:px-7 lg:px-10 py-16 text-white mx-auto flex flex-col md:flex-row max-w-7xl justify-between">
   <div className="mx-auto lg:mx-0 text-center lg:text-left">
     <h1 className="mb-5 text-2xl font-bold footer-title">Best Choice</h1>

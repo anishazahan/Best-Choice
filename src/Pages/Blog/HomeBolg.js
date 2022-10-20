@@ -3,13 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import useBlogs from "../../Hooks/useBlogs";
 
 const HomeBolg = () => {
-  // const [blogs,setBlogs] =useState([]);
-
-  // useEffect(()=>{
-  //     fetch('blog.json')
-  //     .then(res => res.json())
-  //     .then(data => setBlogs(data))
-  // },[])
+ 
 
   const [blogs] = useBlogs();
  
@@ -22,7 +16,7 @@ const HomeBolg = () => {
             <Link to={`/blog-details/${blog.id}`}>
               <div className=" my-5 p-5 lg:p-0 m-0">
                 <div className="">
-                  <img className="w-full" src={blog.img} alt="" />
+                  <img className="w-full hover:hero-overlay hover:bg-black/80" src={blog.img} alt="" />
                 </div>
                 <h2 className="mt-4 mb-2 font-bold">{blog.tittle}</h2>
                 <h2 className="mb-3 font-medium text-gray-600 text-sm">

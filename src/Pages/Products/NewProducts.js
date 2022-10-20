@@ -10,11 +10,11 @@ import { Pagination, Navigation } from "swiper";
 import { useNavigate } from 'react-router-dom';
 
 const NewProducts = () => {
-    const [recommendedProducts,setRecommendedProducts] =useState([])
+    const [newProducts,setNewProducts] =useState([])
     useEffect(()=>{
         fetch('NewProducts.json')
         .then(res=>res.json())
-        .then(data=>setRecommendedProducts(data))
+        .then(data=>setNewProducts(data))
       
     },[])
     const navigate = useNavigate();
@@ -53,10 +53,10 @@ const NewProducts = () => {
         className="mySwiper"
       >
       {
-        recommendedProducts.map(product=>{
+        newProducts.map(product=>{
             return  <SwiperSlide> <div onClick={()=> navigateToProductsDetails(product.id)} className="mx-auto py-10 cursor-pointer px-5 border text-left h-full hover:shadow-xl hover:shadow-2xl">
             <div className="">
-                <img className='hover:skew-y-6' src={product?.img} alt="" />
+                <img className='hover:scale-125 duration-500' src={product?.img} alt="" />
             </div>
             <h2 className='text-[16px] font-semibold'>{product.name}</h2>
             <div className="icons flex flex-row space-x-1 mt-3">

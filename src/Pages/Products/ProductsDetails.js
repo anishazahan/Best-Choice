@@ -34,7 +34,7 @@ const ProductsDetails = () => {
 
                 <div className="product-details basis-6/12 lg:mt-28 ml-10">
                     <div className="">
-                        <p className='text-gray-400 text-sm'>{details.brand}</p>
+                        <p className='text-gray-400 text-sm'>{details?.brand}</p>
                         <h2 className='text-[20px] font-semibold text-gray-700'>{details?.name}</h2>
                         <div className="flex items-center space-x-2">
                         <div className="icons flex flex-row space-x-1 mt-3">

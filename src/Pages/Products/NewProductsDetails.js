@@ -9,17 +9,19 @@ import axios from 'axios'
 
 const NewProductsDetails = () => {
     const {name} = useParams();
-    // console.log(id)
+    console.log(name)
 
     const [quantity,setQuantity] = useState(0)
     const [details,setDetails] = useState([])
     useEffect(()=>{
-        axios.get('NewProducts.json')
+        axios.get('https://raw.githubusercontent.com/anishazahan/Best-Choice/main/public/NewProducts.json')
         .then(data=>
             {
-                const findDetails =data.data.find(details=>details.id === name)
-                // console.log(findDetails);
-                setDetails(findDetails);
+
+                const findDetails =data?.data.find(details=>details.id === name)
+                console.log(findDetails)
+
+                // setDetails(findDetails);
             })
     },[])
 
@@ -34,7 +36,7 @@ const NewProductsDetails = () => {
 
                 <div className="product-details basis-6/12 lg:mt-28 ml-10">
                     <div className="">
-                        <p className='text-gray-400 text-sm'>{details.brand}</p>
+                        <p className='text-gray-400 text-sm'>{details?.brand}</p>
                         <h2 className='text-[20px] font-semibold text-gray-700'>{details?.name}</h2>
                         <div className="flex items-center space-x-2">
                         <div className="icons flex flex-row space-x-1 mt-3">
@@ -48,10 +50,10 @@ const NewProductsDetails = () => {
                         <p className='text-[13px] text-gray-700 mt-2 link'>Write a rivew</p>
                         </div>
                         <p className='text-gray-600 text-sm mt-7'>SKU:BOOQ-MAMBO</p>
-                        <p className='text-gray-600 text-sm mt-2'>Weight:{details.Weight}</p>
+                        <p className='text-gray-600 text-sm mt-2'>Weight:{details?.Weight}</p>
                         <p className='text-gray-600 text-sm mt-2 mb-4'>Shipping:Calculated at Checkout</p>
                         <hr />
-                        <h2 className='text-[18px] font-semibold mt-3 mb-4'>Price:{details.price}$</h2>
+                        <h2 className='text-[18px] font-semibold mt-3 mb-4'>Price:{details?.price}$</h2>
                         <div className="flex items-center space-x-3">
                             <h1>Quantity: </h1>
                           <div className="flex space-x-4 items-center">
