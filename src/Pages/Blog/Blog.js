@@ -19,7 +19,7 @@ const Blog = () => {
           blogs.slice(0,3).map(blog=><MinimizeBlogs key={blog.id} blog={blog}></MinimizeBlogs> )
         }
        </div>
-       <div className="mr-auto my-5 ">
+       <div className="mr-auto my-5 text-right flex justify-end text-secondary font-medium  ">
         <button className='link' onClick={()=>{setAllBlogs(!allBlogs)}}>{allBlogs? 'see less':'See More'}</button>
     </div>
     
