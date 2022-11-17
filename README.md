@@ -1,6 +1,6 @@
 # Best Choice
 
-Best Choice [live link](https://car-manufacturer-76b00.web.app/)
+Best Choice [live link](https://best-choice-a3d8e.firebaseapp.com/)
 
 -using tailwind and daysiUI components
 -Authentication system added.
