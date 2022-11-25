@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="max-w-7xl mx-auto lg:px-5 px-6 md:px-10">
       <div className="flex justify-between items-center flex-wrap lg:flex-nowrap">
-        <Link to="/" className="logo lg:order-1">
+        <Link to="/" className="logo lg:order-1 mx-auto md:mx-0">
           <img className="w-40 hover:bg-transparent" src={logoImg} alt="" />
         </Link>
         <div className="menu lg:order-2 hidden lg:block">
@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="cart-icons flex items-center space-x-3 lg:order-3">
+        <div className="cart-icons flex items-center mt-5 mx-auto md:mx-0 md:mt-0 space-x-3 lg:order-3">
           {
             user? <Link onClick={logout} to='login' className="px-5 py-[5px] border font-medium border-secondary">
             SignOut</Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
           <p>Admin</p>
         </div>
       </div>
-      <div className="lg:hidden block text-right relative">
+      <div className="lg:hidden block text-right relative bg-violet-300">
         <button
           onClick={() => {
             setOpenMenu(!openMenu);
