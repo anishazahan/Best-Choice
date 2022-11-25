@@ -15,6 +15,7 @@ import NewProductsDetails from './Pages/Products/NewProductsDetails';
 import Login from './Authentication/Login/Login';
 import SignUp from './Authentication/Login/SignUp';
 import RequireAuth from './Authentication/Login/RequireAuth';
+import Contact from './Pages/Contact/Contact';
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="products/products-details/:id" element={<ProductsDetails />} />
         <Route path="products/products-details/:name" element={<NewProductsDetails />} />
         <Route path="blog" element={<Blog />} />
+        <Route path="contact" element={<Contact/>} />
         <Route path="about" element={ <RequireAuth><About/></RequireAuth> } />
         <Route path="login" element={<Login/>} />
         <Route path="sign-up" element={<SignUp/>} />
