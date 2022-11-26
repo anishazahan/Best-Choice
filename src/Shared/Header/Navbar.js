@@ -68,9 +68,14 @@ const Navbar = () => {
             </button>
           </div>
           {/*  </p> */}
-          <p>Admin</p>
+           <NavLink to="admin" className="active font-medium">
+              Admin
+            </NavLink>
         </div>
       </div>
+
+
+
       <div className="lg:hidden block text-right relative bg-violet-300">
         <button
           onClick={() => {
