@@ -16,6 +16,7 @@ import Login from './Authentication/Login/Login';
 import SignUp from './Authentication/Login/SignUp';
 import RequireAuth from './Authentication/Login/RequireAuth';
 import Contact from './Pages/Contact/Contact';
+import Admin from './Shared/Dashbord/Admin';
 
 
 
@@ -35,7 +36,7 @@ function App() {
         <Route path="about" element={ <RequireAuth><About/></RequireAuth> } />
         <Route path="login" element={<Login/>} />
         <Route path="sign-up" element={<SignUp/>} />
-        <Route path="sign-up" element={<SignUp/>} />
+        <Route path="sign-up" element={<Admin/>} />
         <Route path="/blog-details/:id" element={<BlogDetails/>} />
         
         <Route path="*" element={<NotFound/>} />
