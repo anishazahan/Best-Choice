@@ -58,9 +58,10 @@ const RecommendenProducts = () => {
       >
       {
         recommendedProducts.map(product=>{
-            return  <SwiperSlide> <div onClick={()=> navigateToProductsDetails(product?.id)} className=" mx-auto cursor-pointer py-10 px-5 border text-left h-full hover:shadow-xl hover:shadow-2xl">
-            <div className="">
-                <img className='hover:skew-y-6' src={product?.img} alt="" />
+            return  <SwiperSlide> <div onClick={()=> navigateToProductsDetails(product?.id)} className=" mx-auto cursor-pointer py-10 px-5 border text-left h-full  hover:shadow-2xl">
+            <div className="relative overflow-hidden">
+                <img className='hover:scale-110 duration-500' src={product?.img} alt="" />
+                <div className=""></div>
             </div>
             <h2 className='text-[16px] font-semibold'>{product.name}</h2>
             <div className="icons flex flex-row space-x-1 mt-3">

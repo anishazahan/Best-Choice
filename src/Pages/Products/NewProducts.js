@@ -19,11 +19,6 @@ const NewProducts = () => {
       
     },[])
 
-  
-
-
-
-
 
     const navigate = useNavigate();
     const navigateToProductsDetails = (id)=>{
@@ -64,7 +59,7 @@ const NewProducts = () => {
         newProducts.map(product=>{
             return  <SwiperSlide> <div onClick={()=> navigateToProductsDetails(product.id)} className="mx-auto py-10 cursor-pointer px-5 border text-left h-full hover:shadow-xl hover:shadow-2xl">
             <div className="">
-                <img className='hover:scale-125 duration-500' src={product?.img} alt="" />
+                <img className='hover:scale-110 duration-500' src={product?.img} alt="" />
             </div>
             <h2 className='text-[16px] font-semibold'>{product.name}</h2>
             <div className="icons flex flex-row space-x-1 mt-3">
