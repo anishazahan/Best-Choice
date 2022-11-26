@@ -26,6 +26,9 @@ const NewProductsDetails = () => {
     },[])
 
 
+    
+
+
   return (
     <div>
         <div className="max-w-7xl mx-auto lg:px-10 px-5">

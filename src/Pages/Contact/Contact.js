@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <>
-<div class="flex min-h-screen mt-[4%] justify-start bg-white mx-4 md:mx-0">
+<div class="flex min-h-screen pt-[4%] justify-start bg-violet-200 mx-4 md:mx-0">
   <div class="mx-auto w-full max-w-lg">
     <h1 class="text-4xl text-primary font-semibold">Contact us_____</h1>
     <p class="mt-3">Email us at contact@help.com or message us here:</p>

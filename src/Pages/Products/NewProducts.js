@@ -8,15 +8,23 @@ import "swiper/css/navigation";
 import './Products.css'
 import { Pagination, Navigation } from "swiper";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const NewProducts = () => {
     const [newProducts,setNewProducts] =useState([])
     useEffect(()=>{
-        fetch('NewProducts.json')
+        fetch('http://localhost:3500/products')
         .then(res=>res.json())
         .then(data=>setNewProducts(data))
       
     },[])
+
+  
+
+
+
+
+
     const navigate = useNavigate();
     const navigateToProductsDetails = (id)=>{
         navigate(`products/products-details/${id}`)

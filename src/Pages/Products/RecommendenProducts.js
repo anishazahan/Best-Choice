@@ -27,7 +27,7 @@ const RecommendenProducts = () => {
   return (
     <div className='max-w-7xl my-16 mx-auto'>
             <div className="px-2 my-10">
-                <h2 className='text-sm font-bold'>RECOMMENDED FOR YOU</h2>
+                <h2 className='text-sm font-bold'>RECOMMENDED FOR YOU FEATURE PRODUCTS</h2>
             </div>
             <Swiper
         slidesPerView={1}
