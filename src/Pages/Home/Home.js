@@ -1,4 +1,5 @@
 import React from 'react'
+import Subscribe from '../../Shared/Subscribe/Subscribe'
 import BlogDetails from '../Blog/BlogDetails'
 import HomeBolg from '../Blog/HomeBolg'
 import CateiogoryProducts from '../Products/CateiogoryProducts'
@@ -23,6 +24,7 @@ const Home = () => {
       <NewProducts></NewProducts>
       <HomeBolg></HomeBolg>
       <Sponcer></Sponcer>
+      <Subscribe></Subscribe>
 
     </div>
   )

@@ -38,7 +38,7 @@ function App() {
         <Route path="sign-up" element={<SignUp/>} />
         <Route path="admin" element={<Admin/>} />
         <Route path="/blog-details/:id" element={<BlogDetails/>} />
-        
+      
         <Route path="*" element={<NotFound/>} />
        </Routes>
        <Footer></Footer>

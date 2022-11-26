@@ -15,7 +15,6 @@ const RecommendenProducts = () => {
         fetch('featureProduct.json')
         .then(res=>res.json())
         .then(data=>setRecommendedProducts(data))
-       
     },[])
 
     const navigate = useNavigate();
