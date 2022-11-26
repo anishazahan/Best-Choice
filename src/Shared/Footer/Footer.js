@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './Footer.css'
 import ScrollToTop from "react-scroll-to-top";
+import {AiFillFacebook,AiFillLinkedin,AiFillInstagram,AiFillTwitterSquare} from 'react-icons/ai'
 
 
 const Footer = () => {
@@ -35,15 +36,12 @@ const Footer = () => {
  </div>
   <div className="mx-auto lg:mx-0">
     <h1 className="footer-title mb-5">Newsletter</h1> 
-    <div className="form-control w-80">
-      <label className="label">
-        <span className="label-text text-white">Enter your email address</span>
-      </label> 
-      <div className="relative">
-        <input type="text" placeholder="Your Email" className="input input-bordered w-full pr-16" /> 
-        <button className="btn btn-secondary absolute top-0 right-0 rounded-l-none">Subscribe</button>
-      </div>
-    </div>
+    <div className="icons flex space-x-5 mt-10 mx-auto">
+                            <Link className='text-3xl rounded-sm bg-secondary hover:bg-white duration-500 hover:text-secondary text-white p-2  shadow-lg' to='/'> <AiFillFacebook></AiFillFacebook> </Link>
+                            <Link className='text-3xl rounded-sm bg-secondary hover:bg-white duration-500 hover:text-secondary text-white p-2  shadow-lg' to='/'> <AiFillLinkedin></AiFillLinkedin> </Link>
+                            <Link className='text-3xl rounded-sm bg-secondary hover:bg-white duration-500 hover:text-secondary text-white p-2  shadow-lg' to='/'> <AiFillInstagram></AiFillInstagram> </Link>
+                            <Link className='text-3xl rounded-sm bg-secondary hover:bg-white duration-500 hover:text-secondary text-white p-2  shadow-lg' to='/'> <AiFillTwitterSquare></AiFillTwitterSquare> </Link>
+                        </div>
   </div>
 </footer>
 <section>
@@ -53,6 +51,7 @@ const Footer = () => {
   <h2 className="text-center text-white mt-3">Copyrignt all right reserved  {(new Date().getFullYear())} </h2>
   <h2 className="text-center text-white pb-10 pt-3">By <span className="uppercase font-extrabold text-[17px] text-secondary">Anisha Zahan</span> </h2>
 </section>
+
 
     </div>
   );
