@@ -1,12 +1,17 @@
 import React from 'react'
+import { useContext } from 'react'
 import {BsLockFill} from 'react-icons/bs'
 import {FaShippingFast,FaShoppingBasket} from 'react-icons/fa'
 import {FcDataConfiguration} from 'react-icons/fc'
 import {MdHelpCenter} from 'react-icons/md'
+import { AppContext } from '../../../Hooks/ProductsContext'
 
 const Services = () => {
+
+   const context = useContext(AppContext)
   return (
     <>
+         <h2>{}</h2>
         <div className="max-w-7xl mx-auto">
             <h2 className='text-center text-2xl font-semibold text-gray-700 mt-10 mb-3'>Our Services</h2>
             <p className='text-center text-gray-400 text-sm mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate vel possimus enim, fugiat et.</p>
