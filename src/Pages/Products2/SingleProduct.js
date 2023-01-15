@@ -34,7 +34,7 @@ const SingleProduct = () => {
        
     },[])
     if(isSingleLoading){
-        return <div className=" mt-10 text-center font-semibold">...Loading!!</div>
+        return <div className=" my-20 text-center font-semibold">...Loading!!</div>
     }
 
   return (
