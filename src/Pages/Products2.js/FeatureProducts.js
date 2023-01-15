@@ -1,11 +1,34 @@
 import React from 'react'
+import { useProductContext } from '../../Hooks/ProductsContext'
+import Product from './Product';
+
+
+
 
 const FeatureProducts = () => {
-  return (
-    <div>
+    const {isLoading,FeatureProducts} = useProductContext();
 
-        
-    </div>
+        if(isLoading){
+            return <div className="">....Loading</div>
+        }
+
+
+  return (
+    <>
+        <div className="max-w-7xl px-10 md:px-20 mx-auto">
+            <h2 className='text-sm font-bold'>OUR FEATURE PRODUCTS</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+            {
+                FeatureProducts.map((currentElement)=>{
+                    return <Product key={currentElement.id} {...currentElement}/>
+                })
+            }
+            </div>
+
+        </div>
+
+    </>
   )
 }
 
