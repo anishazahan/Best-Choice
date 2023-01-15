@@ -2,9 +2,8 @@ import React from 'react'
 import Subscribe from '../../Shared/Subscribe/Subscribe'
 import BlogDetails from '../Blog/BlogDetails'
 import HomeBolg from '../Blog/HomeBolg'
-import CateiogoryProducts from '../Products/CateiogoryProducts'
-import NewProducts from '../Products/NewProducts'
-import RecommendenProducts from '../Products/RecommendenProducts'
+
+
 import FeatureProducts from '../Products2/FeatureProducts'
 import HomeBanner from './Componants/HomeBanner'
 import Services from './Componants/Services'
@@ -21,7 +20,7 @@ const Home = () => {
       <FeatureProducts></FeatureProducts>
       {/* <RecommendenProducts></RecommendenProducts> */}
       <OfferBanner></OfferBanner>
-      <CateiogoryProducts></CateiogoryProducts>
+      {/* <CateiogoryProducts></CateiogoryProducts> */}
       <Services></Services>
       {/* <NewProducts></NewProducts> */}
       <HomeBolg></HomeBolg>

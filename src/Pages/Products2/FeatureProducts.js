@@ -18,7 +18,7 @@ const FeatureProducts = () => {
     <>
         <div className="max-w-7xl px-10 md:px-20 mx-auto">
             <h2 className='text-sm font-bold'>OUR FEATURE PRODUCTS</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mb-40">
 
             {
                 FeatureProducts.map((currentElement)=>{
