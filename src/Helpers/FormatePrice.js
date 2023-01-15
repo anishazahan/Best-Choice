@@ -1,9 +1,7 @@
-import React from 'react'
 
-const FormatePrice = () => {
-  return (
-    <div>FormatePrice</div>
-  )
+
+const FormatePrice = ({price})=>{
+        return  Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD',maximumFractionDigits: 2 }).format(price/10000);
 }
 
 export default FormatePrice

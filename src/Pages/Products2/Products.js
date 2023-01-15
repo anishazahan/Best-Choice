@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import FormatePrice from '../../Helpers/FormatePrice';
 
 const Products = (currentElement) => {
     console.log(currentElement)
@@ -16,7 +17,7 @@ const Products = (currentElement) => {
           </div>
         <div className="flex py-6 justify-between px-5">
           <h2 className='font-semibold'>{name}</h2>
-          <h2 className='font-semibold'>{price} <span className='font-bold text-secondary'>$</span> </h2>
+          <h2 className='font-bold text-secondary'>{<FormatePrice price={price}/>} </h2>
         </div>
       </div>
 
