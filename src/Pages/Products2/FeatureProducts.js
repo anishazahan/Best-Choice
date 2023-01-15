@@ -17,7 +17,7 @@ const FeatureProducts = () => {
   return (
     <>
         <div className="max-w-5xl px-10 mx-auto">
-            <h2 className='text-sm font-bold'>OUR FEATURE PRODUCTS</h2>
+            <h2 className='text-sm font-bold'>OUR FEATURE CATEGORY</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 mb-40">
 
             {
