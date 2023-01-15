@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Header from './Shared/Header/Header';
 import { Route, Routes } from 'react-router-dom';
@@ -8,15 +8,16 @@ import Footer from './Shared/Footer/Footer';
 import ShippingAndReturns from './Pages/ShippingAndReturns/ShippingAndReturns';
 import Blog from './Pages/Blog/Blog';
 import BlogDetails from './Pages/Blog/BlogDetails';
-import Products from './Pages/Products/Products';
-import ProductsDetails from './Pages/Products/ProductsDetails';
+import Products from './Pages/Products2/Products';
+
 import NotFound from './Pages/NotFound';
-import NewProductsDetails from './Pages/Products/NewProductsDetails';
+
 import Login from './Authentication/Login/Login';
 import SignUp from './Authentication/Login/SignUp';
 import RequireAuth from './Authentication/Login/RequireAuth';
 import Contact from './Pages/Contact/Contact';
 import Admin from './Shared/Dashbord/Admin';
+import SingleProduct from './Pages/Products2/SingleProduct';
 
 
 
@@ -28,9 +29,9 @@ function App() {
        <Routes>
        <Route path="/" element={<Home />} />
         <Route path="shipping" element={<ShippingAndReturns/>} />
-        <Route path="products" element={<Products />} />
-        <Route path="products/products-details/:id" element={<ProductsDetails />} />
-        <Route path="products/products-details/:name" element={<NewProductsDetails />} />
+        <Route path="products" element={<Products/>} />
+        <Route path="/singleProduct/:id" element={<SingleProduct/>} />
+        
         <Route path="blog" element={<Blog />} />
         <Route path="contact" element={<Contact/>} />
         <Route path="about" element={ <RequireAuth><About/></RequireAuth> } />

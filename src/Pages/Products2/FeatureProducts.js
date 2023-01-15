@@ -1,6 +1,7 @@
 import React from 'react'
 import { useProductContext } from '../../Hooks/ProductsContext'
-import Product from './Product';
+import Products from './Products';
+
 
 
 
@@ -21,7 +22,7 @@ const FeatureProducts = () => {
 
             {
                 FeatureProducts.map((currentElement)=>{
-                    return <Product key={currentElement.id} {...currentElement}/>
+                    return <Products key={currentElement.id} {...currentElement}/>
                 })
             }
             </div>
