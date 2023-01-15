@@ -5,6 +5,7 @@ import HomeBolg from '../Blog/HomeBolg'
 import CateiogoryProducts from '../Products/CateiogoryProducts'
 import NewProducts from '../Products/NewProducts'
 import RecommendenProducts from '../Products/RecommendenProducts'
+import FeatureProducts from '../Products2.js/FeatureProducts'
 import HomeBanner from './Componants/HomeBanner'
 import Services from './Componants/Services'
 import Sponcer from './Componants/Sponcer'
@@ -17,11 +18,12 @@ const Home = () => {
     <div>
       <HomeBanner></HomeBanner>
       <SubBanner2></SubBanner2>
-      <RecommendenProducts></RecommendenProducts>
+      <FeatureProducts></FeatureProducts>
+      {/* <RecommendenProducts></RecommendenProducts> */}
       <OfferBanner></OfferBanner>
       <CateiogoryProducts></CateiogoryProducts>
       <Services></Services>
-      <NewProducts></NewProducts>
+      {/* <NewProducts></NewProducts> */}
       <HomeBolg></HomeBolg>
       <Sponcer></Sponcer>
       <Subscribe></Subscribe>
