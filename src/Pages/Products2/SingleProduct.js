@@ -42,7 +42,7 @@ const SingleProduct = () => {
 
         <ProductBreadcrumb title={name}/>
 
-        <div className="max-w-7xl px-5 md:px-10 mx-auto my-20 ">
+        <div className="max-w-7xl px-5 lg:px-10 mx-auto my-20 ">
             <div className="flex flex-col lg:flex-row">
 
                 {/* products -img */}
@@ -50,7 +50,7 @@ const SingleProduct = () => {
 
            {/* products -data */}
 
-            <div className="w-full img lg:basis-6/12 ml-5 space-y-3 ">
+            <div className="w-full lg:basis-6/12 ml-5 pr-3 lg:mr-0 lg:ml-10 space-y-3 ">
                    <h2 className='font-semibold text-xl uppercase'>{name}</h2>
                    <div className=" flex">
                         <h2 className='font-semibold uppercase'>{stars}</h2>
@@ -62,7 +62,7 @@ const SingleProduct = () => {
                    </div>
                    <h2 className='uppercase font-semibold text-sm'>Deal Of the day : <FormatePrice price = {price}></FormatePrice>  </h2>
                    <p className='text-gray-800 text-sm'>{description}</p>
-                   <div className="flex justify-between">
+                   <div className="flex justify-between flex-wrap">
                         <div className=" flex flex-col items-center">
                             <p className='text-2xl text-gray-500 font-bold'><FaShippingFast></FaShippingFast> </p>
                             <h2 className='font-semibold'>Fast Shipping</h2>
