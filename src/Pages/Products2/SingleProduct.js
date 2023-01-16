@@ -9,6 +9,7 @@ import {FaShippingFast,FaShoppingBasket} from 'react-icons/fa'
 import {FcDataConfiguration} from 'react-icons/fc'
 import {MdHelpCenter} from 'react-icons/md'
 import StarRatings from './StarRatings';
+import AddToCart from './AddToCart';
 
 const single_api = "https://api.pujakaitem.com/api/products"
 
@@ -44,7 +45,7 @@ const SingleProduct = () => {
         <ProductBreadcrumb title={name}/>
 
         <div className="max-w-7xl px-5 lg:px-10 mx-auto my-20 ">
-            <div className="flex flex-col lg:flex-row">
+            <div className="flex flex-col lg:flex-row items-stretch">
 
                 {/* products -img */}
            <DetailsImg imgs={image}></DetailsImg>
@@ -66,19 +67,19 @@ const SingleProduct = () => {
                    <p className='text-gray-800 text-sm'>{description}</p>
                    <div className="flex justify-between flex-wrap">
                         <div className=" flex flex-col items-center">
-                            <p className='text-2xl text-gray-500 font-bold'><FaShippingFast></FaShippingFast> </p>
+                            <p className='text-2xl text-primary font-bold bg-slate-300 p-2 rounded-full'><FaShippingFast></FaShippingFast> </p>
                             <h2 className='font-semibold'>Fast Shipping</h2>
                         </div>
                         <div className=" flex flex-col items-center">
-                            <p className='text-2xl text-gray-500 font-bold'><FaShoppingBasket></FaShoppingBasket> </p>
+                            <p className='text-2xl text-primary font-bold bg-slate-300 p-2 rounded-full'><FaShoppingBasket></FaShoppingBasket> </p>
                             <h2 className='font-semibold'>Secure Payment</h2>
                         </div>
                         <div className=" flex flex-col items-center">
-                            <p className='text-2xl text-gray-500 font-bold'><FcDataConfiguration></FcDataConfiguration> </p>
+                            <p className='text-2xl text-primary font-bold bg-slate-300 p-2 rounded-full'><FcDataConfiguration></FcDataConfiguration> </p>
                             <h2 className='font-semibold'>Secure Shopping</h2>
                         </div>
                         <div className=" flex flex-col items-center">
-                            <p className='text-3xl mx-auto text-gray-500 font-bold'><MdHelpCenter className='mx-auto'></MdHelpCenter> </p>
+                            <p className='text-3xl mx-auto text-primary font-bold bg-slate-300 p-2 rounded-full'><MdHelpCenter className='mx-auto'></MdHelpCenter> </p>
                             <h2 className='font-semibold'>24/7 Help Center</h2>
                         </div>
                         
@@ -92,6 +93,10 @@ const SingleProduct = () => {
                    <div className="">
                     <hr className='border border-gray-600' />
                    </div>
+                   {
+                    stock > 0 && <AddToCart product={singleProduct}></AddToCart>
+                   }
+
                    
                 </div>
 
