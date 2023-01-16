@@ -8,6 +8,7 @@ import FormatePrice from '../../Helpers/FormatePrice';
 import {FaShippingFast,FaShoppingBasket} from 'react-icons/fa'
 import {FcDataConfiguration} from 'react-icons/fc'
 import {MdHelpCenter} from 'react-icons/md'
+import StarRatings from './StarRatings';
 
 const single_api = "https://api.pujakaitem.com/api/products"
 
@@ -53,8 +54,9 @@ const SingleProduct = () => {
             <div className="w-full lg:basis-6/12 ml-5 pr-3 lg:mr-0 lg:ml-10 space-y-3 ">
                    <h2 className='font-semibold text-xl uppercase'>{name}</h2>
                    <div className=" flex">
-                        <h2 className='font-semibold uppercase'>{stars}</h2>
-                        <h2 className='font-semibold uppercase'>14</h2>
+                    <StarRatings reviews={reviews} stars ={stars}></StarRatings>
+                        {/* <h2 className='font-semibold uppercase'>{stars}</h2>
+                        <h2 className='font-semibold uppercase'>14</h2> */}
                    </div>
                    <h2 className='font-semibold uppercase'>Reviews : {reviews}</h2>
                    <div className="font-semibold">
