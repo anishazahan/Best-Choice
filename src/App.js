@@ -8,7 +8,7 @@ import Footer from './Shared/Footer/Footer';
 import ShippingAndReturns from './Pages/ShippingAndReturns/ShippingAndReturns';
 import Blog from './Pages/Blog/Blog';
 import BlogDetails from './Pages/Blog/BlogDetails';
-import Products from './Pages/Products2/Products';
+
 
 import NotFound from './Pages/NotFound';
 
@@ -18,6 +18,7 @@ import RequireAuth from './Authentication/Login/RequireAuth';
 import Contact from './Pages/Contact/Contact';
 import Admin from './Shared/Dashbord/Admin';
 import SingleProduct from './Pages/Products2/SingleProduct';
+import MainProducts from './Pages/Products2/MainProducts';
 
 
 
@@ -29,7 +30,7 @@ function App() {
        <Routes>
        <Route path="/" element={<Home />} />
         <Route path="shipping" element={<ShippingAndReturns/>} />
-        <Route path="products" element={<Products/>} />
+        <Route path="products" element={<MainProducts/>} />
         <Route path="/singleProduct/:id" element={<SingleProduct/>} />
         
         <Route path="blog" element={<Blog />} />
