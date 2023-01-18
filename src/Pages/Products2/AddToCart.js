@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { BsCheck } from "react-icons/bs";
+import { NavLink } from 'react-router-dom';
 import CartAmount from './CartAmount';
 
 const AddToCart = ({product}) => {
@@ -42,6 +43,11 @@ const AddToCart = ({product}) => {
              setDecrease={setDecrease}
              setIncrease={setIncrease}
          />
+
+          {/* ///......  add to cart btn ,,,,,,,,, */}
+          <NavLink to={''}>
+            <button className='px-6 my-5 py-2 bg-secondary text-white font-semibold text-sm'>Add To Cart</button>
+          </NavLink>
 
     </div>
   )
