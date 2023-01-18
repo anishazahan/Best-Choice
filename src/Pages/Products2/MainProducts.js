@@ -24,7 +24,7 @@ const MainProducts = () => {
                 </div>
 
                 {/* ...filter section....... */}
-                <div className="main-products grid-cols-1 lg:grid-cols-3">
+                <div className="main-products ">
                     <ProductsList></ProductsList>
                 </div>
             </div>
