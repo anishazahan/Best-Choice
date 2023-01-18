@@ -5,7 +5,7 @@ import ProductsList from './ProductsList'
 import SortProducts from './SortProducts'
 
 const MainProducts = () => {
-    const {filter_products} = useFilterContext();
+   
   return (
     <>
 
