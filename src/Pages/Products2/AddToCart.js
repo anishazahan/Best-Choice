@@ -46,7 +46,7 @@ const AddToCart = ({product}) => {
 
           {/* ///......  add to cart btn ,,,,,,,,, */}
           <NavLink to={''}>
-            <button className='px-6 my-5 py-2 bg-secondary text-white font-semibold text-sm'>Add To Cart</button>
+            <button className='px-6 my-5 py-2 bg-secondary text-white font-semibold text-sm hover:bg-primary duration-500'>Add To Cart</button>
           </NavLink>
 
     </div>

@@ -7,7 +7,7 @@ const DetailsImg = ({imgs = [{url :""}]}) => {
   return (
     <>
     
-                    <div className="w-full img lg:basis-6/12 mb-10 lg:mb-0 ">
+                    <div className="w-full img lg:basis-6/12 mb-10 lg:mb-0 lg:mt-[5rem] ">
                     <div className="flex flex-col w-full relative">
                     <img className='w-full px-6 mx-auto duration-700 hover:bg-transparent' src={mailImg.url} alt={mailImg.filename} />
                     <div className="flex mt-4 justify-between px-6 gap-2">
