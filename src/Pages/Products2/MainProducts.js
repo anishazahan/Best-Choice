@@ -9,7 +9,7 @@ const MainProducts = () => {
   return (
     <>
 
-        <div className="max-w-7xl px-5 lg:px-10  mx-auto">
+        <div className="max-w-7xl px-5 lg:px-10  mx-auto mt-10">
             <div className="flex flex-col md:flex-row">
                 {/* ...filter section....... */}
 

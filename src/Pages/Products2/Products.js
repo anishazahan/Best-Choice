@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 import FormatePrice from '../../Helpers/FormatePrice';
 
 const Products = (currentElement) => {
-    // console.log(currentElement)
+    // console.log(currentElement);
 
     const {id,name,image,price,category} = currentElement;
 
   return (
     <>
-    <NavLink to={`singleProduct/${id}`}>
+    <NavLink to={`/singleProduct/${id}`}>
       <div className="card shadow-2xl rounded-none border-2">
           <div className="relative">
             <img src={image} alt={name} />
