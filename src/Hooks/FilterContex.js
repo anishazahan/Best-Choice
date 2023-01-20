@@ -29,17 +29,20 @@ export const FilterContextProvider = ({ children }) => {
     return dispatch({ type: "SET_LIST_VIEW" });
   };
   // update filter value
-  const setListView = () => {
-    return dispatch({ type: "SET_LIST_VIEW" });
+  const updateFilterValue = (event) => {
+    let name = event.target.name
+    let value = event.target.value
+    return dispatch ({type:"UPDATE_FILTER_VALUE", payload :{name,value}})
   };
 
   useEffect(() => {
+    dispatch({type : "FILTER_PRODUCTS"})
     dispatch({ type: "LOAD_FILTER_PRODUCTS", payload: products });
-  }, [products]);
+  }, [products,state.filters]);
 
   return (
     <FilterContext.Provider
-      value={{ ...state, setGridView,setListView}}>
+      value={{ ...state, setGridView,setListView,updateFilterValue}}>
       {children}
     </FilterContext.Provider>
   );
