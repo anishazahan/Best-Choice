@@ -17,6 +17,7 @@ const filterReducer = (state, action) => {
           ...state,
           grid_view: false,
         };
+
       case "UPDATE_FILTER_VALUE":
        const {name,value} = action.payload;
        return{
@@ -30,6 +31,7 @@ const filterReducer = (state, action) => {
         let { all_products } = state;
         let tempFilterProduct = [...all_products];
         const {text} = state.filters;
+        
         if (text) {
             tempFilterProduct = tempFilterProduct.filter((curElem) => {
               return curElem.name.toLowerCase().includes(text);
