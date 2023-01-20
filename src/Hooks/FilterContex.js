@@ -10,7 +10,9 @@ const initialState = {
   filter_products: [],
   all_products: [],
   grid_view: false,
-  sorting_value: "lowest",
+  filters :{
+    text : "",
+  }
 };
 
 export const FilterContextProvider = ({ children }) => {
@@ -23,6 +25,10 @@ export const FilterContextProvider = ({ children }) => {
     return dispatch({ type: "SET_GRID_VIEW" });
   };
   // to set the list view
+  const setListView = () => {
+    return dispatch({ type: "SET_LIST_VIEW" });
+  };
+  // update filter value
   const setListView = () => {
     return dispatch({ type: "SET_LIST_VIEW" });
   };
