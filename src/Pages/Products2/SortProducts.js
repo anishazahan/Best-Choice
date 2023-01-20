@@ -3,10 +3,10 @@ import { BsFillGridFill, BsList } from "react-icons/bs";
 import { useFilterContext } from '../../Hooks/FilterContex';
 
 const SortProducts = () => {
-  const {grid_view,setGridView,setListView } =useFilterContext();
+  const {grid_view,setGridView,setListView,filter_products } =useFilterContext();
   return (
     <div className='flex justify-between'>
-      <div className="sort-btn flex space-x-2">
+      <div className="sort-btn flex space-x-3">
       <button
           className={grid_view ? "text-2xl bg-primary p-2 text-white " : "text-2xl bg-slate-300 p-2"}
           onClick={setGridView}>
@@ -20,7 +20,7 @@ const SortProducts = () => {
         </button>
       </div>
       <div className="sort-btn">
-        <h2 className='font-medium'>Products Available</h2>
+        <h2 className='font-medium'>{filter_products.length} <span className='px-2'>Products Available</span> </h2>
       </div>
 
     </div>
