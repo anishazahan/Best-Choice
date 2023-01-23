@@ -12,6 +12,7 @@ const initialState = {
   grid_view: false,
   filters :{
     text : "",
+    category:"all",
   }
 };
 
