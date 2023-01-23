@@ -11,10 +11,10 @@ const ListView = ({products}) => {
         
         
             {
-                products.map((product)=>{
+                products?.map((product)=>{
                     const { id, name, image, price, description } = product;
                     return (
-                        <div className='flex flex-col lg:flex-row space-y-5 border-2 '>
+                        <div key={id} className='flex flex-col lg:flex-row space-y-5 border-2 '>
                         <div className="img-part h-full lg:w-8/12 w-full rounded-sm">
                             <img className='h-full' src={image} alt="" />
                         </div>

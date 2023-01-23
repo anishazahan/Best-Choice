@@ -3,7 +3,7 @@ import { BsFillGridFill, BsList } from "react-icons/bs";
 import { useFilterContext } from '../../Hooks/FilterContex';
 
 const SortProducts = () => {
-  const {grid_view,setGridView,setListView,filter_products } =useFilterContext();
+  const {grid_view,setGridView,sorting,setListView,filter_products } =useFilterContext();
   return (
     <div className='flex justify-between'>
       <div className="sort-btn flex space-x-3">
@@ -27,7 +27,8 @@ const SortProducts = () => {
       </div>
 
       <div className="sort-btn">
-        <h2 className='font-medium'>{filter_products.length} <span className='px-2'>Products Available</span> </h2>
+        <h2 className='font-medium'>{`${filter_products?.length}`}<span className='px-2'>Products Available</span> </h2>
+       
       </div>
 
         {/* ///---dropdown filter view----- */}
