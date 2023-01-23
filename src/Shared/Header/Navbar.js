@@ -61,12 +61,12 @@ const Navbar = () => {
           <p className="text-xl">
             <FaUserAlt></FaUserAlt>{" "}
           </p>
-          <div className="indicator">
+          <NavLink to='cart' className="indicator">
             <span className="indicator-item badge badge-secondary">2</span>
             <button className="text-2xl p-2">
               <BsCartFill></BsCartFill>
             </button>
-          </div>
+          </NavLink>
           {/*  </p> */}
            <NavLink to="admin" className="active font-medium">
               Admin
