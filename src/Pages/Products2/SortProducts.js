@@ -47,9 +47,9 @@ const SortProducts = () => {
             <option className='hover:bg-primary ' value="#" disabled></option>
             <option className='hover:bg-primary ' value="highest">Price(highest)</option>
             <option className='hover:bg-primary ' value="#" disabled></option>
-            <option className='hover:bg-primary ' value="a-z">Price(a-z)</option>
+            <option className='hover:bg-primary ' value="a-z">Products(a-z)</option>
             <option className='hover:bg-primary ' value="#" disabled></option>
-            <option className='hover:bg-primary ' value="z-a">Price(z-a)</option>
+            <option className='hover:bg-primary ' value="z-a">Products(z-a)</option>
           </select>
         </form>
       </div>

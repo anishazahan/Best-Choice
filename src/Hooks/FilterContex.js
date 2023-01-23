@@ -38,16 +38,6 @@ export const FilterContextProvider = ({ children }) => {
         dispatch({ type: "GET_SORT_VALUE", payload: userValue });
       };
 
-       // to sort the product
-//     useEffect(() => {
-//     dispatch({ type: "FILTER_PRODUCTS" });
-//     dispatch({ type: "SORTING_PRODUCTS" });
-//   }, [products, state.sorting_value, state.filters]);
-
-useEffect(()=>{
-    dispatch({type : "SORTING_PRODUCTS",payload:products})
-},[state.sorting_value]);
-
 
   // update filter value
   const updateFilterValue = (event) => {
@@ -56,10 +46,21 @@ useEffect(()=>{
     return dispatch ({type:"UPDATE_FILTER_VALUE", payload :{name,value}})
   };
 
+    
+   // to sort the product
+    useEffect(() => {
+    dispatch({ type: "FILTER_PRODUCTS" });
+    dispatch({ type: "SORTING_PRODUCTS" });
+  }, [products, state.sorting_value, state.filters]);
+
+
+
   useEffect(() => {
     dispatch({type : "FILTER_PRODUCTS"});
     dispatch({ type: "LOAD_FILTER_PRODUCTS", payload: products });
   }, [products,state.filters]);
+
+
 
   return (
     <FilterContext.Provider
