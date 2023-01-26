@@ -19,7 +19,7 @@ const CartList = ({id,color,amount,price,name,image}) => {
     <>
 
      <div class="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start">
-        <img className='w-36 rounded-md' src={image} alt={name} />
+        <img className=' w-full sm:w-36 rounded-md' src={image} alt={name} />
 
           <div class="sm:ml-4 sm:flex sm:w-full sm:justify-between">
             <div class="mt-5 sm:mt-0 ">
