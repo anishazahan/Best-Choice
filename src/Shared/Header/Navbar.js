@@ -7,10 +7,12 @@ import { RiMenu2Line } from "react-icons/ri";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { signOut } from "firebase/auth";
+import { useCartContext } from "../../Hooks/cart_context";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [user, loading, error] = useAuthState(auth);
+  const {total_item} = useCartContext();
   const logout = () => {
     signOut(auth);
   };
@@ -62,7 +64,7 @@ const Navbar = () => {
             <FaUserAlt></FaUserAlt>{" "}
           </p>
           <NavLink to='cart' className="indicator">
-            <span className="indicator-item badge badge-secondary">2</span>
+            <span className="indicator-item badge badge-secondary">{total_item}</span>
             <button className="text-2xl p-2">
               <BsCartFill></BsCartFill>
             </button>
