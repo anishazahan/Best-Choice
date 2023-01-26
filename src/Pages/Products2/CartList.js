@@ -6,14 +6,8 @@ import { useCartContext } from '../../Hooks/cart_context';
 
 const CartList = ({id,color,amount,price,name,image}) => {
 
-    const {removeCartItem} = useCartContext();
-    const setDecrease = () => {
-        // amount > 1 ? setAmount(amount - 1) : setAmount(1);
-      };
-    
-      const setIncrease = () => {
-        // amount < stock ? setAmount(amount + 1) : setAmount(stock);
-      };
+    const {removeCartItem,setDecrease,setIncrement} = useCartContext();
+   
 
   return (
     <>
@@ -39,8 +33,8 @@ const CartList = ({id,color,amount,price,name,image}) => {
 
                {/* ///......  products quantity ,,,,,,,,, */}
               <CartAmount amount={amount}
-             setDecrease={setDecrease}
-             setIncrease={setIncrease}
+             setDecrease={()=>setDecrease(id)}
+             setIncrease={()=>setIncrement(id)}
          />
               </div>
               <div class="flex items-center space-x-4">
