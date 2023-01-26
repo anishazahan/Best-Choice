@@ -14,6 +14,7 @@ const cartReducer = (state, action) => {
         price: product.price,
         max: product.stock,
       };
+      console.log(id, color, amount, product);
   
       return {
         ...state,
