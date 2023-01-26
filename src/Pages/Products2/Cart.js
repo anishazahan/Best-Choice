@@ -1,32 +1,22 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import { useCartContext } from '../../Hooks/cart_context'
 import CartList from './CartList';
 
 const Cart = () => {
 
-const {cart} = useCartContext();
+const {cart,clearCart} = useCartContext();
 
 
-
+        if(cart.length === 0 ){
+            return <div className="my-20 mx-auto text-center">
+                <h2 className='text-2xl font-medium'>No Cart in Item</h2>
+            </div>
+        }
 
   return (
-    // <div className=' px-5 w-full md:px-10 lg:px-0 lg:max-w-4xl mx-auto my-20'>
-    //     <div className="grid grid-cols-5 text-center border-b-2 py-2">
-    //         <h2>Item</h2>
-    //         <h2 className='hidden md:block'>price</h2>
-    //         <h2>Quantity</h2>
-    //         <h2 className='hidden md:block'>Subtotal</ h2>
-    //         <h2>Remove</h2>
-            
-    //     </div>
-    // </div>
-
-
-
     <>
-
-
-  <div class=" bg-gray-100 pt-20 pb-20">
+    <div class=" bg-gray-100 pt-20 pb-20">
     <h1 class="mb-10 text-center text-2xl font-bold"> Manage Cart Items</h1>
     <div class="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0">
       <div class="rounded-lg md:w-2/3 flex flex-col">
@@ -42,8 +32,8 @@ const {cart} = useCartContext();
         }
 
         <div className="flex justify-between">
-            <button className='text-sm font-medium py-2 px-4 bg-primary rounded-sm duration-500 text-white hover:bg-secondary'>Continue Shipping</button>
-            <button className='text-sm font-medium py-2 px-4 bg-secondary rounded-sm duration-500 text-white hover:bg-primary'>Clear Cart</button>
+            <NavLink to='/products' className='text-sm font-medium py-2 px-4 bg-primary rounded-sm duration-500 text-white hover:bg-secondary'>Continue Shipping</NavLink>
+            <button onClick={clearCart} className=' tracking-wide text-sm font-medium py-2 px-4 bg-secondary rounded-sm duration-500 text-white hover:bg-primary'>Clear Cart</button>
         </div>
 
       </div>
