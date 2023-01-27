@@ -31,9 +31,7 @@ const Navbar = () => {
             <NavLink to="products" className="active font-medium">
               Products
             </NavLink>
-            <NavLink to="/" className="active font-medium">
-              Privacy Policy
-            </NavLink>
+           
             <NavLink to="shipping" className="active font-medium">
               Shiping & returns
             </NavLink>
@@ -71,7 +69,7 @@ const Navbar = () => {
           </NavLink>
           {/*  </p> */}
            <NavLink to="admin" className="active font-medium">
-              Admin
+              Dashboard
             </NavLink>
         </div>
       </div>

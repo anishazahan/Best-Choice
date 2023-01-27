@@ -20,6 +20,7 @@ import Admin from './Shared/Dashbord/Admin';
 import SingleProduct from './Pages/Products2/SingleProduct';
 import MainProducts from './Pages/Products2/MainProducts';
 import Cart from './Pages/Products2/Cart';
+import CheckOut from './Pages/Products2/CheckOut';
 
 
 
@@ -32,6 +33,7 @@ function App() {
        <Route path="/" element={<Home />} />
         <Route path="shipping" element={<ShippingAndReturns/>} />
         <Route path="products" element={<MainProducts/>} />
+        <Route path="products" element={<RequireAuth><CheckOut/></RequireAuth>} />
         <Route path="/singleProduct/:id" element={<SingleProduct/>} />
         <Route path="cart" element={<Cart/>} />
         <Route path="blog" element={<Blog />} />
