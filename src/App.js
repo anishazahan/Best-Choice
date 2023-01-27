@@ -8,10 +8,7 @@ import Footer from './Shared/Footer/Footer';
 import ShippingAndReturns from './Pages/ShippingAndReturns/ShippingAndReturns';
 import Blog from './Pages/Blog/Blog';
 import BlogDetails from './Pages/Blog/BlogDetails';
-
-
 import NotFound from './Pages/NotFound';
-
 import Login from './Authentication/Login/Login';
 import SignUp from './Authentication/Login/SignUp';
 import RequireAuth from './Authentication/Login/RequireAuth';
@@ -42,8 +39,7 @@ function App() {
         <Route path="login" element={<Login/>} />
         <Route path="sign-up" element={<SignUp/>} />
         <Route path="admin" element={<Admin/>} />
-        <Route path="/blog-details/:id" element={<BlogDetails/>} />
-      
+        <Route path="/blog-details/:id" element={<BlogDetails/>}/>
         <Route path="*" element={<NotFound/>} />
        </Routes>
        <Footer></Footer>
