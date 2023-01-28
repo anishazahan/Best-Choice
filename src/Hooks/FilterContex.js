@@ -17,6 +17,7 @@ const initialState = {
   }
 };
 
+
 export const FilterContextProvider = ({ children }) => {
   const { products } = useProductContext();
 
